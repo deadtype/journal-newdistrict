@@ -190,7 +190,9 @@ function dequeue_jquery_migrate( &$scripts){
 	}
 }
 
-
-
+add_action( 'wp_print_scripts', 'dequeue_bones_scripts', 100 );
+function dequeue_bones_scripts () {
+    wp_deregister_script('bones-modernizr');
+}
 ?>
 
