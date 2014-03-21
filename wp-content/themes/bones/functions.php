@@ -81,10 +81,10 @@ function bones_custom_image_sizes( $sizes ) {
 }
 
 /*
-The function above adds the ability to use the dropdown menu to select 
-the new images sizes you have just created from within the media manager 
-when you add media to your content blocks. If you add more image sizes, 
-duplicate one of the lines in the array and name it according to your 
+The function above adds the ability to use the dropdown menu to select
+the new images sizes you have just created from within the media manager
+when you add media to your content blocks. If you add more image sizes,
+duplicate one of the lines in the array and name it according to your
 new image size.
 */
 
@@ -179,5 +179,18 @@ function bones_wpsearch($form) {
 	return $form;
 } // don't remove this bracket!
 
+/*************** ClEAN UP HEADER *****************/
+
+add_filter( 'wp_default_scripts', 'dequeue_jquery_migrate' );
+
+function dequeue_jquery_migrate( &$scripts){
+	if(!is_admin()){
+		$scripts->remove( 'jquery');
+		$scripts->add( 'jquery', false, array( 'jquery-core' ), '1.10.2' );
+	}
+}
+
+
 
 ?>
+
