@@ -182,7 +182,6 @@ function bones_wpsearch($form) {
 /*************** ClEAN UP HEADER *****************/
 
 add_filter( 'wp_default_scripts', 'dequeue_jquery_migrate' );
-
 function dequeue_jquery_migrate( &$scripts){
 	if(!is_admin()){
 		$scripts->remove( 'jquery');
@@ -190,9 +189,21 @@ function dequeue_jquery_migrate( &$scripts){
 	}
 }
 
+add_action( 'init', 'bones_head_cleanup_extra' );
+function bones_head_cleanup_extra() {
+	remove_action( 'wp_head', 'feed_links_extra', 3 );
+	remove_action( 'wp_head', 'feed_links', 2 );
+}
+
 add_action( 'wp_print_scripts', 'dequeue_bones_scripts', 100 );
 function dequeue_bones_scripts () {
     wp_deregister_script('bones-modernizr');
 }
+
+add_action( 'wp_print_styles', 'my_deregister_styles', 100 );
+function my_deregister_styles() {
+	wp_deregister_style( 'bones-ie-only' );
+}
+
 ?>
 
