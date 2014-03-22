@@ -36,39 +36,39 @@ jQuery(document).ready(function($) {
 	it, so be sure to research and find the one
 	that works for you best.
 	*/
-	
+
 	/* getting viewport width */
 	var responsive_viewport = $(window).width();
-	
+
 	/* if is below 481px */
 	if (responsive_viewport < 481) {
-	
+
 	} /* end smallest screen */
-	
+
 	/* if is larger than 481px */
 	if (responsive_viewport > 481) {
-	
+
 	} /* end larger than 481px */
-	
+
 	/* if is above or equal to 768px */
 	if (responsive_viewport >= 768) {
-	
+
 		/* load gravatars */
 		$('.comment img[data-gravatar]').each(function(){
 			$(this).attr('src',$(this).attr('data-gravatar'));
 		});
-		
+
 	}
-	
+
 	/* off the bat large screen actions */
 	if (responsive_viewport > 1030) {
-	
+
 	}
-	
-	
+
+
 	// add all your scripts here
-	
- 
+
+
 }); /* end of as page load scripts */
 
 
@@ -106,3 +106,35 @@ jQuery(document).ready(function($) {
 	w.addEventListener( "orientationchange", restoreZoom, false );
 	w.addEventListener( "devicemotion", checkTilt, false );
 })( this );
+
+/* Viewport sizing */
+
+function viewport() {
+    var height = (window.innerHeight ? window.innerHeight : $w.height());
+    var full = height;
+    var ninety = height * 0.95;
+    var three_quarters = height * 0.75;
+    var half = height * 0.5;
+    var two_thirds = height * 0.6;
+    var third = height * 0.3;
+    full = parseInt(full) + 'px';
+    ninety = parseInt(ninety) + 'px';
+    three_quarters = parseInt(three_quarters) + 'px';
+    two_thirds = parseInt(two_thirds) + 'px';
+    half = parseInt(half) + 'px';
+    third = parseInt(third) + 'px';
+    $(".full").css('height',full);
+    $(".ninety").css('height',ninety);
+    $(".three_quarters").css('height',three_quarters);
+    $(".two_thirds").css('height',two_thirds);
+    $(".half").css('height',half);
+    $(".third").css('height',third);
+}
+
+$(document).ready(function() {
+    viewport();
+
+    $(window).resize(function() {
+        viewport();
+    });
+});
