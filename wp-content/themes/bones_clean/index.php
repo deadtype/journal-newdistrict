@@ -6,6 +6,8 @@
 
 						<div id="main" class="eightcol first clearfix" role="main">
 
+
+							<?php query_posts("post_count=1&post_type=editorial_articles"); ?>
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
@@ -33,6 +35,7 @@
 							</article>
 
 							<?php endwhile; ?>
+							<?php wp_reset_query(); // reset the query ?>
 
 									<?php if ( function_exists( 'bones_page_navi' ) ) { ?>
 											<?php bones_page_navi(); ?>

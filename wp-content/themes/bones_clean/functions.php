@@ -205,4 +205,17 @@ function my_deregister_styles() {
 	wp_deregister_style( 'bones-ie-only' );
 }
 
+/*************** CUSTOM POST TYPES ****************/
+
+add_filter( 'pre_get_posts', 'my_get_posts' );
+
+function my_get_posts( $query ) {
+
+	if ( is_home() && $query->is_main_query() )
+		$query->set( 'post_type', array( 'post', 'editorial_articles' ) );
+
+	return $query;
+}
+
+
 ?>
