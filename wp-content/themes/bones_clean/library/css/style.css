@@ -217,6 +217,7 @@ sub {
  */
 img {
   border: 0;
+  width: 100%;
 }
 
 /**
@@ -705,6 +706,15 @@ body {
   margin-right: auto;
 }
 
+.content_aligned {
+  margin-left: 6.25%;
+}
+
+.relative_container {
+  height: 100%;
+  position: relative;
+}
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -792,7 +802,7 @@ h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
 
 h1, .h1 {
   font-size: 2.5em;
-  line-height: .8;
+  line-height: .85;
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -802,7 +812,7 @@ h1, .h1 {
 }
 
 .h1 + .subtitle {
-  margin-top: 1em;
+  margin-top: .7em;
 }
 
 h2, .h2 {
@@ -833,6 +843,19 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
+.logo {
+  width: .5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.text {
+  margin-top: 5em;
+  margin-bottom: 4em;
+  font-style: normal;
+  color: black;
+}
+
 /*
 all navs have a .nav class applied via
 the wp_menu function; this is so we can
@@ -895,6 +918,34 @@ POSTS & CONTENT STYLES
   margin: 2em auto;
 }
 
+.top_aligned .control_box {
+  width: 100%;
+  top: 3em;
+}
+
+.bottom_aligned .control_box {
+  width: 100%;
+  bottom: 3em;
+}
+
+.centered_aligned .control_box {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: left;
+  width: 100%;
+}
+
+.perfect_centered_layout .control_box {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+
 .control_box {
   position: absolute;
 }
@@ -903,26 +954,9 @@ POSTS & CONTENT STYLES
   position: relative;
 }
 
-.full {
-  margin-bottom: .5em;
-}
-
-.two_thirds {
-  margin-top: 1.5em;
-}
-
 .centered_layout {
   text-align: center;
   height: 100%;
-}
-
-.centered_layout .control_box {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  text-align: center;
-  width: 90%;
 }
 
 .bottom_box {
@@ -1003,6 +1037,10 @@ POSTS & CONTENT STYLES
 /* image gallery styles */
 /* end .gallery */
 /* gallery caption styles */
+.invisible {
+  visibility: hidden;
+}
+
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
@@ -1260,6 +1298,10 @@ view.
   .content_wrap {
     width: 77%;
   }
+
+  .content_aligned {
+    margin-left: 11.5%;
+  }
 }
 @media only screen and (min-width: 42em) {
   body {
@@ -1269,6 +1311,15 @@ view.
   .content_wrap {
     width: 73%;
   }
+
+  .content_aligned {
+    margin-left: 13.5%;
+  }
+
+  .custom_alignment .control_box {
+    text-align: left;
+    white-space: nowrap;
+  }
 }
 @media only screen and (min-width: 50em) {
   body {
@@ -1277,6 +1328,10 @@ view.
 
   .content_wrap {
     width: 60%;
+  }
+
+  .content_aligned {
+    margin-left: 20%;
   }
 }
 @media only screen and (min-width: 65em) {
