@@ -16,12 +16,31 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: $serif;
-	font-size: 100%;
-	line-height: 1.5;
-	color: #565656;
+	font-family: "minion-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.1em;
+	line-height: 1.7;
+	color: #222;
+	  text-rendering: optimizeLegibility;
+	  -webkit-hyphens: auto;
+	  -moz-hyphens: auto;
+	  -ms-hyphens: auto;
+	  -o-hyphens: auto;
+	  hyphens: auto;
+	  -moz-font-feature-settings: "liga=1";
+	  -moz-font-feature-settings: "liga";
+	  /* EDIT: new syntax for FF 15+ */
+	  -ms-font-feature-settings: "liga";
+	  -o-font-feature-settings: "liga";
+	  -webkit-font-feature-settings: "liga";
+	  font-feature-settings: "liga";
+	  -webkit-font-smoothing: antialiased;
 }
 
+.maincontainer {max-width: 1300px;}
+.content_wrap {width:87.5%; position: relative; }
+.content_wrap {margin-left: auto; margin-right: auto;}
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -121,13 +140,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 
 h1, .h1 {
 	font-size: 2.5em;
-	line-height: 1.333em;
+	line-height: .8;
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	color: white;
+	text-transform: uppercase;
+
 }
 
 h2, .h2 {
 	font-size: 1.75em;
 	line-height: 1.4em;
 	margin-bottom: 0.375em;
+
 }
 
 h3, .h3 {
@@ -241,6 +267,55 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+
+.subtitle {
+	color: white;
+	padding-left:.3em;
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size:.7em;
+}
+
+.article_abstract {
+	font-style: italic;
+	font-size: 1.2em;
+	text-align: left;
+	margin: 2em auto;
+}
+
+.control_box {
+  position: absolute;
+}
+
+.full, .ninety, .three_quarters, .two_thirds .half {
+  position: relative;
+}
+
+.full {margin-bottom: .5em;}
+.two_thirds {margin-top: 1.5em;}
+
+.centered_layout {
+  text-align: center;
+  height: 100%;
+}
+
+.centered_layout .control_box {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+
+.bottom_box {
+  position: absolute;
+  text-align: center;
+  bottom: 1.9em;
+  width: 100%;
+}
 
 #content {
 	margin-top: 2.2em;
@@ -434,7 +509,7 @@ PAGE NAVI STYLES
                 	font-weight: bold;
                 }
                 a:hover, a:focus {
-                    
+
                 }
             }
         }
@@ -783,3 +858,38 @@ FOOTER STYLES
 
 	.copyright {}
 
+@media only screen and (min-width: 32em) {
+
+	.content_wrap {
+		width: 77%;
+	}
+}
+
+@media only screen and (min-width: 42em) {
+
+	body {
+		font-size: 1.25em;
+	}
+		.content_wrap {
+		width: 73%;
+	}
+
+}
+
+@media only screen and (min-width: 50em) {
+
+	body {
+		font-size: 1.3em;
+	}
+	.content_wrap {
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 65em) {
+
+	body {
+		font-size: 1.4em;
+	}
+
+}

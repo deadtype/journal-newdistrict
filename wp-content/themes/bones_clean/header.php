@@ -14,6 +14,8 @@
 
 		<?php wp_head(); ?>
 
+<script type="text/javascript" src="//use.typekit.net/joz1nzz.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
 
 	<body <?php body_class(); ?>>

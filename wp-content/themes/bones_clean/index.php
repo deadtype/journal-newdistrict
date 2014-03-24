@@ -8,22 +8,41 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
 
-								<header class="article-header">
+									<div class="full clearfix" style="background-image: url('<?php echo the_field('featured_image'); ?>'); background-size:cover; background-position:<?php echo the_field('featured_image_vertical_position'); ?> <?php echo the_field('featured_image_horizontal_position'); ?>;">
+										<div class='centered_layout' style='<?php echo the_field('featured_image_background_colour'); ?>'>
+											<div class='control_box'>
+												<h1 class="h1" <?php if( get_field('feature_image_text_colour') ): ?>style='color:<?php echo the_field('feature_image_text_colour'); ?>'<?php endif; ?>> <?php echo the_field('editorial_title'); ?></h1>
+													<?php if( get_field('subtitle') ): ?>
+														<div class='subtitle' <?php if( get_field('feature_image_text_colour') ): ?>style='color:<?php echo the_field('feature_image_text_colour'); ?>'<?php endif; ?>><?php the_field('subtitle'); ?></div>
+													<?php endif; ?>
+											</div>
+										</div>
+									</div>
 
-									<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-									<p class="byline vcard"><?php
-										printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));
-									?></p>
+								<header class="article-header">
 
 								</header>
 
 								<section class="entry-content clearfix">
-									<?php the_content(); ?>
+									<div class='maincontainer'>
+										<div class='content_wrap'>
+											<div class='article_abstract'>
+												<?php echo the_field('abstract'); ?>
+											</div>
+											<?php the_content(); ?>
+										</div>
+									</div>
 								</section>
 
 								<footer class="article-footer">
-									<p class="tags"><?php the_tags( '<span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '' ); ?></p>
+									<div class='maincontainer'>
+										<div class='content_wrap'>
 
+											<p class="byline vcard"><?php
+												printf( __( 'Published <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span><!-- <span class="amp">&</span> filed under %4$s.-->', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));
+											?></p>
+										</div>
+									</div>
 								</footer>
 
 								<?php // comments_template(); // uncomment if you want to use them ?>
