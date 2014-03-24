@@ -141,6 +141,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	*/
 
 	/* removing text decoration from all headline links */
+
+		  -webkit-hyphens: none;
+	  -moz-hyphens: none;
+	  -ms-hyphens: none;
+	  -o-hyphens: none;
+	  hyphens: none;
 	a {
 		text-decoration: none;
 	}
@@ -157,7 +163,21 @@ h1, .h1 {
 	margin: 0;
 }
 
+.control_box {
+	font-size: .7em;
+}
+
 .h1 + .subtitle {margin-top: .7em;}
+
+.subtitle {
+	color: white;
+	padding-left:.3em;
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size:.8em;
+}
 
 h2, .h2 {
 	font-size: 1.75em;
@@ -197,14 +217,36 @@ NAVIGATION STYLES
 .logo {
 	width: .5em;
 	margin-top: 1em;
-	margin-bottom: 1em;
 }
+
 .text {
 	margin-top:5em;
 	margin-bottom: 4em;
 	font-style: normal;
 	color:black;
 }
+
+
+.navigation {
+
+	padding-bottom: .1em;
+	margin-bottom: 2em;
+	border-bottom: 1px solid dimgray;
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: .7em;
+	span {
+		display: inline-block;
+	}
+	span + span {
+		margin-left: 3em;
+	}
+}
+
+
+
 /*
 all navs have a .nav class applied via
 the wp_menu function; this is so we can
@@ -289,16 +331,6 @@ and more scalable.
 POSTS & CONTENT STYLES
 *********************/
 
-.subtitle {
-	color: white;
-	padding-left:.3em;
-	font-family: "futura-pt",sans-serif;
-	font-style: normal;
-	font-weight: 600;
-	text-transform: uppercase;
-	font-size:.7em;
-}
-
 .article_abstract {
 	font-style: italic;
 	font-size: 1.2em;
@@ -306,17 +338,37 @@ POSTS & CONTENT STYLES
 	margin: 2em auto;
 }
 
+.published_on {
+	position: absolute;
+	width: 100%;
+	top: 1em;
+
+	.vcard {
+		color:white;
+		font-family: "futura-pt",sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		text-transform: uppercase;
+		font-size:.65em;
+	}
+}
+
 .top_aligned {
 	.control_box {
 		width:100%;
-		top: 3em;
+		top: 2.5em;
+	}
+
+	.published_on {
+		top: auto;
+		bottom: 1em;
 	}
 }
 
 .bottom_aligned {
 	.control_box {
 		width:100%;
-		bottom: 3em;
+		bottom: 2.5em;
 	}
 }
 
@@ -328,6 +380,10 @@ POSTS & CONTENT STYLES
 	  -webkit-transform: translate(-50%, -50%);
 	  text-align: left;
 	  width: 100%;
+	}
+	.published_on {
+		top: auto;
+		bottom: 1em;
 	}
 }
 
@@ -344,6 +400,12 @@ POSTS & CONTENT STYLES
 
 .custom_alignment {
 	.control_box {
+	}
+}
+
+.custom_title {
+	.control_box {
+		visibility: hidden;
 	}
 }
 
@@ -931,7 +993,14 @@ FOOTER STYLES
 	body {
 		font-size: 1.25em;
 	}
+
+	.control_box {
+		font-size: .8em;
+	}
+
 	$content_wrap: 73%;
+
+
 
 	.content_wrap {
 		width: $content_wrap;
@@ -952,7 +1021,12 @@ FOOTER STYLES
 	body {
 		font-size: 1.3em;
 	}
-	$content_wrap: 60%;
+
+	.control_box {
+		font-size: .9em;
+	}
+
+	$content_wrap: 65%;
 
 	.content_wrap {
 		width: $content_wrap;
@@ -966,4 +1040,37 @@ FOOTER STYLES
 		font-size: 1.4em;
 	}
 
+
+		$content_wrap: 60%;
+
+	.content_wrap {
+		width: $content_wrap;
+	}
+	.content_aligned {margin-left: (100% - $content_wrap) / 2; }
+
 }
+
+@media only screen and (min-width: 80em) {
+
+	.control_box {
+	font-size: 1em;
+	}
+}
+
+@media only screen and (min-width: 1300px) {
+	$left_margin: 17%;
+
+	.content_wrap {
+	width: auto;
+	max-width: 780px;
+	margin-left: $left_margin;
+	}
+
+.article_abstract {
+	margin-right: -12em;
+}
+	.content_aligned {
+		margin-left: $left_margin;
+	}
+}
+

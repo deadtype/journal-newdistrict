@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<div class='maincontainer'>
 	<div class='content_wrap'>
 		<div class='logo'>
 			<img src='<?php echo get_template_directory_uri(); ?>/library/images/new_dist_logo_knockout.png'>
@@ -13,7 +12,12 @@
 			<?php wp_reset_query(); // reset the query ?>
 		</div>
 	</div>
-</div>
+
+	<div class='content_wrap'>
+		<div class="navigation">
+			<span>Featured</span><span>Our Wineries</span><span>About</span>
+		</div>
+	</div>
 
 <?php query_posts("post_count=1&post_type=editorial_articles"); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -33,7 +37,7 @@
 				<?php
 				if ( $value == 'center_aligned' )
 				{
-					echo "centered_layout";
+					echo "centered_aligned";
 				}
 				if ( $value == 'top_aligned' )
 				{
@@ -45,13 +49,14 @@
 				}
 				if ( $value == 'hide_title' )
 				{
-					echo "invisible";
+					echo "custom_title";
 				}
 				if ( $value == 'custom_alignment' )
 				{
 					echo "custom_alignment";
 				}
 				?>'>
+
 					<?php
 					if ( $value == 'center_aligned' )
 					{
@@ -74,6 +79,8 @@
 						get_template_part('/header_text_partials/custom_aligned');
 					}
 					?>
+
+					<?php get_template_part('/general_partials/published_date'); ?>
 				</div>
 
 			</div>
@@ -85,25 +92,21 @@
 	</header>
 
 	<section class="entry-content clearfix">
-		<div class='maincontainer'>
 			<div class='content_wrap'>
 				<div class='article_abstract'>
 					<?php echo the_field('abstract'); ?>
 				</div>
 				<?php the_content(); ?>
 			</div>
-		</div>
 	</section>
 
 	<footer class="article-footer">
-		<div class='maincontainer'>
 			<div class='content_wrap'>
 
 				<p class="byline vcard"><?php
 					printf( __( 'Published <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span><!-- <span class="amp">&</span> filed under %4$s.-->', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));
 				?></p>
 			</div>
-		</div>
 	</footer>
 
 	<?php // comments_template(); // uncomment if you want to use them ?>

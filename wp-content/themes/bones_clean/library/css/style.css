@@ -795,6 +795,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   http://css-tricks.com/watch-your-font-weight/
   */
   /* removing text decoration from all headline links */
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
 }
 h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
   text-decoration: none;
@@ -811,8 +816,22 @@ h1, .h1 {
   margin: 0;
 }
 
+.control_box {
+  font-size: .7em;
+}
+
 .h1 + .subtitle {
   margin-top: .7em;
+}
+
+.subtitle {
+  color: white;
+  padding-left: .3em;
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: .8em;
 }
 
 h2, .h2 {
@@ -846,7 +865,6 @@ NAVIGATION STYLES
 .logo {
   width: .5em;
   margin-top: 1em;
-  margin-bottom: 1em;
 }
 
 .text {
@@ -854,6 +872,23 @@ NAVIGATION STYLES
   margin-bottom: 4em;
   font-style: normal;
   color: black;
+}
+
+.navigation {
+  padding-bottom: .1em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid dimgray;
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: .7em;
+}
+.navigation span {
+  display: inline-block;
+}
+.navigation span + span {
+  margin-left: 3em;
 }
 
 /*
@@ -901,16 +936,6 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-.subtitle {
-  color: white;
-  padding-left: .3em;
-  font-family: "futura-pt",sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: .7em;
-}
-
 .article_abstract {
   font-style: italic;
   font-size: 1.2em;
@@ -918,14 +943,32 @@ POSTS & CONTENT STYLES
   margin: 2em auto;
 }
 
+.published_on {
+  position: absolute;
+  width: 100%;
+  top: 1em;
+}
+.published_on .vcard {
+  color: white;
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: .65em;
+}
+
 .top_aligned .control_box {
   width: 100%;
-  top: 3em;
+  top: 2.5em;
+}
+.top_aligned .published_on {
+  top: auto;
+  bottom: 1em;
 }
 
 .bottom_aligned .control_box {
   width: 100%;
-  bottom: 3em;
+  bottom: 2.5em;
 }
 
 .centered_aligned .control_box {
@@ -936,6 +979,10 @@ POSTS & CONTENT STYLES
   text-align: left;
   width: 100%;
 }
+.centered_aligned .published_on {
+  top: auto;
+  bottom: 1em;
+}
 
 .perfect_centered_layout .control_box {
   left: 50%;
@@ -944,6 +991,10 @@ POSTS & CONTENT STYLES
   -webkit-transform: translate(-50%, -50%);
   text-align: center;
   width: 90%;
+}
+
+.custom_title .control_box {
+  visibility: hidden;
 }
 
 .control_box {
@@ -1308,6 +1359,10 @@ view.
     font-size: 1.25em;
   }
 
+  .control_box {
+    font-size: .8em;
+  }
+
   .content_wrap {
     width: 73%;
   }
@@ -1326,6 +1381,23 @@ view.
     font-size: 1.3em;
   }
 
+  .control_box {
+    font-size: .9em;
+  }
+
+  .content_wrap {
+    width: 65%;
+  }
+
+  .content_aligned {
+    margin-left: 17.5%;
+  }
+}
+@media only screen and (min-width: 65em) {
+  body {
+    font-size: 1.4em;
+  }
+
   .content_wrap {
     width: 60%;
   }
@@ -1334,9 +1406,24 @@ view.
     margin-left: 20%;
   }
 }
-@media only screen and (min-width: 65em) {
-  body {
-    font-size: 1.4em;
+@media only screen and (min-width: 80em) {
+  .control_box {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .content_wrap {
+    width: auto;
+    max-width: 780px;
+    margin-left: 17%;
+  }
+
+  .article_abstract {
+    margin-right: -12em;
+  }
+
+  .content_aligned {
+    margin-left: 17%;
   }
 }
 /*
