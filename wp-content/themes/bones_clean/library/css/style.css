@@ -1363,6 +1363,10 @@ view.
     font-size: .8em;
   }
 
+  .subtitle {
+    font-size: .75em;
+  }
+
   .content_wrap {
     width: 73%;
   }
@@ -1383,6 +1387,10 @@ view.
 
   .control_box {
     font-size: .9em;
+  }
+
+  .subtitle {
+    font-size: .7em;
   }
 
   .content_wrap {
