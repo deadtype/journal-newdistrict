@@ -99,14 +99,12 @@
 			</div>
 	</section>
 
-	<footer class="article-footer">
-			<div class='content_wrap'>
 
-			</div>
-	</footer>
 
 </article>
-
+	<footer class="article-footer">
+	<?php get_template_part('/general_partials/social_links'); ?>
+	</footer>
 
 <?php endwhile; ?>
 <?php wp_reset_query(); // reset the query ?>

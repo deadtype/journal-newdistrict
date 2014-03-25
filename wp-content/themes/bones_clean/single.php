@@ -1,36 +1,104 @@
 <?php get_header(); ?>
 
-			<div id="content">
 
-				<div id="inner-content" class="wrap clearfix">
+	<div class='content_wrap'>
+		<div class='logo_word'>
+			<a href="<?php echo get_settings('home'); ?>"><img src='<?php echo get_template_directory_uri(); ?>/library/images/logo.png'></a>
+		</div>
+	</div>
 
-					<div id="main" class="eightcol first clearfix" role="main">
+	<div class='single_article'>
+		<div class='content_wrap'>
+			<?php bones_main_nav(); ?>
+		</div>
+	</div>
 
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-								<header class="article-header">
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix featured_article' ); ?> role="article">
 
-									<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
-									<p class="byline vcard"><?php
-										printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&amp;</span> filed under %4$s.', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', ') );
-									?></p>
+		<div class="full clearfix" style="background-image: url('<?php echo the_field('featured_image'); ?>'); background-size:cover; background-position:<?php echo the_field('featured_image_vertical_position'); ?> <?php echo the_field('featured_image_horizontal_position'); ?>;">
 
-								</header>
+		<?php
+		$value = get_field( "featured_image_text_position" );
+		?>
 
-								<section class="entry-content clearfix" itemprop="articleBody">
-									<?php the_content(); ?>
-								</section>
+			<div class='relative_container' <?php if( get_field('featured_image_background_colour') ): ?>style='<?php echo the_field('featured_image_background_colour'); ?>'<?php endif; ?>>
 
-								<footer class="article-footer">
-									<?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
 
-								</footer>
+				<div class='
+				<?php
+				if ( $value == 'center_aligned' )
+				{
+					echo "centered_aligned";
+				}
+				if ( $value == 'top_aligned' )
+				{
+					echo "top_aligned";
+				}
+				if ( $value == 'bottom_aligned' )
+				{
+					echo "bottom_aligned";
+				}
+				if ( $value == 'hide_title' )
+				{
+					echo "custom_title";
+				}
+				if ( $value == 'custom_alignment' )
+				{
+					echo "custom_alignment";
+				}
+				?>'>
 
-								<?php comments_template(); ?>
+					<?php
+					if ( $value == 'center_aligned' )
+					{
+						get_template_part('/header_text_partials/centered_layout');
+					}
+					if ( $value == 'top_aligned')
+					{
+						get_template_part('/header_text_partials/aligned');
+					}
+					if ( $value == 'bottom_aligned')
+					{
+						get_template_part('/header_text_partials/aligned');
+					}
+					if ( $value == 'hide_title')
+					{
+						get_template_part('/header_text_partials/aligned');
+					}
+					if ( $value == 'custom_alignment' )
+					{
+						get_template_part('/header_text_partials/custom_aligned');
+					}
+					?>
 
-							</article>
+					<?php get_template_part('/general_partials/published_date'); ?>
+				</div>
+
+			</div>
+
+		</div>
+
+	<header class="article-header">
+
+	</header>
+
+	<section class="entry-content clearfix">
+			<div class='content_wrap'>
+				<div class='article_abstract'>
+					<?php echo the_field('abstract'); ?>
+				</div>
+				<?php the_content(); ?>
+			</div>
+	</section>
+
+</article>
+
+	<footer class="article-footer">
+	<?php get_template_part('/general_partials/social_links'); ?>
+	</footer>
 
 						<?php endwhile; ?>
 
@@ -50,12 +118,6 @@
 
 						<?php endif; ?>
 
-					</div>
 
-					<?php get_sidebar(); ?>
-
-				</div>
-
-			</div>
 
 <?php get_footer(); ?>

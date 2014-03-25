@@ -115,7 +115,7 @@ LINK STYLES
 *********************/
 
 a, a:visited {
-	color: lightgray;
+	color: hsl(0,0%,67%);
 
 
   -webkit-transition: color 0.3s ease-out;
@@ -152,6 +152,18 @@ a, a:visited {
 	}
 }
 
+.main_footer {margin-top: 2em;
+margin-bottom: .35em;}
+
+.social {display: inline-block;
+	a {text-decoration: none;}
+
+}
+.social + .social { margin-right: 2em;}
+.social.logo_word {width: 4.6em; display: block;
+	img {vertical-align: 2px;}
+}
+.social.link {font-size: .8em; }
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
@@ -268,8 +280,10 @@ NAVIGATION STYLES
 		display: inline-block;
 	}
 	span + span {
-		margin-left: 3em;
+		margin-left: 2em;
 	}
+
+	a {text-decoration: none;}
 }
 
 .archive_article {
@@ -313,6 +327,22 @@ NAVIGATION STYLES
 .archive_article + .archive_article {
 	margin-top: 1em;
 }
+
+.single_article {
+	margin-top: 4em;
+}
+
+.single {
+	.menu-item-158 {
+		a {
+			color: black;
+		}
+	}
+	.nav .menu-item-166 {
+		a {
+		}
+	}
+}
 /*
 all navs have a .nav class applied via
 the wp_menu function; this is so we can
@@ -338,12 +368,10 @@ and more scalable.
 	.menu-item-166 {
 		float: right;
 		a {
-		color: black;
 		}
 	}
 
 	.menu-item-166 a:hover {
-		color: dodgerblue;
 	}
 	li {
 		white-space: nowrap;
@@ -554,7 +582,7 @@ POSTS & CONTENT STYLES
 }
 
 .featured_article {
-	margin-bottom: 7em;
+	margin-bottom: 5em;
 }
 
 #content {

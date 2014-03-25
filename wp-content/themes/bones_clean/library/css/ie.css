@@ -166,9 +166,9 @@ BUTTONS
 *********************/
 .button, .button:visited {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 1px solid #be0d37;
-  border-top-color: #db0f3f;
-  border-left-color: #db0f3f;
+  border: 1px solid #8a8a8a;
+  border-top-color: #999999;
+  border-left-color: #999999;
   padding: 4px 12px;
   color: white;
   display: inline-block;
@@ -180,32 +180,32 @@ BUTTONS
   margin-bottom: 20px;
   line-height: 21px;
   border-radius: 4px;
-  background-color: #e40f42;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f01d4f), to(#e40f42));
-  background-image: -webkit-linear-gradient(top, #f01d4f, #e40f42);
-  background-image: -moz-linear-gradient(top, #f01d4f, #e40f42);
-  background-image: -o-linear-gradient(top, #f01d4f, #e40f42);
-  background-image: linear-gradient(to bottom, #f01d4f, #e40f42);
+  background-color: #9e9e9e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ababab), to(#9e9e9e));
+  background-image: -webkit-linear-gradient(top, #ababab, #9e9e9e);
+  background-image: -moz-linear-gradient(top, #ababab, #9e9e9e);
+  background-image: -o-linear-gradient(top, #ababab, #9e9e9e);
+  background-image: linear-gradient(to bottom, #ababab, #9e9e9e);
 }
 .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
   color: white;
-  border: 1px solid #be0d37;
-  border-top-color: #9d0a2d;
-  border-left-color: #9d0a2d;
-  background-color: #cc0e3b;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e40f42), to(#cc0e3b));
-  background-image: -webkit-linear-gradient(top, #e40f42, #cc0e3b);
-  background-image: -moz-linear-gradient(top, #e40f42, #cc0e3b);
-  background-image: -o-linear-gradient(top, #e40f42, #cc0e3b);
-  background-image: linear-gradient(to bottom, #e40f42, #cc0e3b);
+  border: 1px solid #8a8a8a;
+  border-top-color: #787878;
+  border-left-color: #787878;
+  background-color: #919191;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9e9e9e), to(#919191));
+  background-image: -webkit-linear-gradient(top, #9e9e9e, #919191);
+  background-image: -moz-linear-gradient(top, #9e9e9e, #919191);
+  background-image: -o-linear-gradient(top, #9e9e9e, #919191);
+  background-image: linear-gradient(to bottom, #9e9e9e, #919191);
 }
 .button:active, .button:visited:active {
-  background-color: #f01d4f;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e40f42), to(#f01d4f));
-  background-image: -webkit-linear-gradient(top, #e40f42, #f01d4f);
-  background-image: -moz-linear-gradient(top, #e40f42, #f01d4f);
-  background-image: -o-linear-gradient(top, #e40f42, #f01d4f);
-  background-image: linear-gradient(to bottom, #e40f42, #f01d4f);
+  background-color: #ababab;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9e9e9e), to(#ababab));
+  background-image: -webkit-linear-gradient(top, #9e9e9e, #ababab);
+  background-image: -moz-linear-gradient(top, #9e9e9e, #ababab);
+  background-image: -o-linear-gradient(top, #9e9e9e, #ababab);
+  background-image: linear-gradient(to bottom, #9e9e9e, #ababab);
 }
 
 .blue-button, .blue-button:visited {

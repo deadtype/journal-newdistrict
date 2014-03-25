@@ -22,7 +22,7 @@ Template Name: Our Wineries Template
 	<?php bones_main_nav(); ?>
 </div>
 
-
+<div class='clearfix'>
 <?php query_posts("orderby=rand&post_type=wineries"); ?>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<a href='<?php echo the_field('winery_link'); ?>' target="_blank">
@@ -40,6 +40,6 @@ Template Name: Our Wineries Template
 		</a>
 	<?php endwhile; endif; ?>
 <?php wp_reset_query(); // reset the query ?>
-
+</div>
 
 <?php get_footer(); ?>
