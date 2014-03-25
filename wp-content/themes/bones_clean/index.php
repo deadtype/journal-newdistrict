@@ -13,16 +13,15 @@
 		</div>
 	</div>
 
-	<div class='content_wrap'>
-		<div class="navigation">
-			<span>Featured</span><span>Our Wineries</span><span>About</span>
-		</div>
-	</div>
+<div class='content_wrap'>
+	<?php bones_main_nav(); ?>
+</div>
+
 
 <?php query_posts("post_count=1&post_type=editorial_articles"); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix featured_article' ); ?> role="article">
 
 		<div class="full clearfix" style="background-image: url('<?php echo the_field('featured_image'); ?>'); background-size:cover; background-position:<?php echo the_field('featured_image_vertical_position'); ?> <?php echo the_field('featured_image_horizontal_position'); ?>;">
 
@@ -106,10 +105,46 @@
 			</div>
 	</footer>
 
-
 </article>
 
+	<div class='content_wrap'>
+		<div class="navigation">
+			<span>Our Wineries</span>
+		</div>
+	</div>
+
 <?php endwhile; ?>
+<?php wp_reset_query(); // reset the query ?>
+
+	<div class='content_wrap'>
+
+		<div class="text">
+			<?php query_posts("p=150"); ?>
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<?php the_content(); ?>
+				<?php endwhile; endif; ?>
+			<?php wp_reset_query(); // reset the query ?>
+		</div>
+	</div>
+
+
+<?php query_posts("post_type=wineries"); ?>
+	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<a href='<?php echo the_field('winery_link'); ?>' target="_blank">
+		<div class='content_aligned'>
+			<div class='grid_item' style="background-image: url('<?php echo the_field('winery_image'); ?>'); background-size:cover; background-position: center center;">
+				<div class="relative_container grid_item_colour_cover">
+					<div class="perfect_centered_layout">
+						<div class="control_box">
+							<div class='grid_title'><?php the_title(); ?></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</a>
+
+	<?php endwhile; endif; ?>
 <?php wp_reset_query(); // reset the query ?>
 
 		<?php if ( function_exists( 'bones_page_navi' ) ) { ?>

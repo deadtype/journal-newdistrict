@@ -708,6 +708,7 @@ body {
 
 .content_aligned {
   margin-left: 6.25%;
+  margin-right: 1em;
 }
 
 .relative_container {
@@ -766,13 +767,23 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #f01d4f;
+  color: lightgray;
+  -webkit-transition: color 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  -ms-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
   /* on hover */
   /* on click */
   /* mobile tap color */
 }
 a:hover, a:focus, a:visited:hover, a:visited:focus {
   color: #d10e3c;
+  -webkit-transition: color 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  -ms-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
 }
 a:link, a:visited:link {
   /*
@@ -899,11 +910,20 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 .nav {
-  border: 1px solid #ccc;
-  border-bottom: 0;
+  padding-bottom: .1em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid dimgray;
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: .7em;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */
+}
+.nav li + li {
+  margin-left: 3em;
 }
 .nav li {
   /*
@@ -917,9 +937,6 @@ and more scalable.
 .nav li a {
   display: block;
   text-decoration: none;
-  padding: 10px 10px;
-  background-color: #eee;
-  border-bottom: 1px solid #ccc;
   /*
   remember this is for mobile ONLY, so there's no need
   to even declare hover styles here, you can do it in
@@ -927,9 +944,17 @@ and more scalable.
   keep this file as small as possible!
   */
 }
+.nav li a:hover, .nav li a:focus {
+  color: black;
+}
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
   padding-left: 30px;
+}
+.nav li.current-menu-item a,
+.nav li.current_page_item a,
+.nav li.current-page-ancestor a {
+  color: black;
 }
 
 /* end .nav */
@@ -1015,6 +1040,47 @@ POSTS & CONTENT STYLES
   text-align: center;
   bottom: 1.9em;
   width: 100%;
+}
+
+.grid_item {
+  height: 10em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid_item:nth-child(n+1) {
+  margin-top: 1em;
+}
+
+.grid_item_colour_cover {
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: background 0.5s ease-out;
+  -moz-transition: background 0.5s ease-out;
+  -o-transition: background 0.5s ease-out;
+  -ms-transition: background 0.5s ease-out;
+  transition: background 0.5s ease-out;
+}
+
+.grid_item_colour_cover:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.grid_title {
+  font-size: 1.25em;
+  line-height: .85;
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  padding: .4em .7em;
+  border: 2px solid white;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.featured_article {
+  margin-bottom: 7em;
 }
 
 #content {
@@ -1649,8 +1715,6 @@ you can add resource intensive styles.
   NAVIGATION STYLES
   *********************/
   .nav {
-    background: #eee;
-    border: 0;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */
@@ -1673,18 +1737,8 @@ you can add resource intensive styles.
     has the possibility of being a mobile device.
     */
   }
-  .nav li a:hover, .nav li a:focus {
-    background-color: #dedede;
-  }
   .nav li ul.sub-menu,
   .nav li ul.children {
-    margin-top: 0;
-    border: 1px solid #ccc;
-    border-top: 0;
-    position: absolute;
-    overflow: hidden;
-    visibility: hidden;
-    z-index: 8999;
     /* highlight sub-menu current page */
   }
   .nav li ul.sub-menu li,
@@ -1694,14 +1748,6 @@ you can add resource intensive styles.
     just remember deeper menus suck
     for usability. k, bai.
     */
-  }
-  .nav li ul.sub-menu li a,
-  .nav li ul.children li a {
-    padding-left: 10px;
-    border-right: 0;
-    display: block;
-    width: 180px;
-    border-bottom: 1px solid #ccc;
   }
   .nav li ul.sub-menu li:last-child a,
   .nav li ul.children li:last-child a {
