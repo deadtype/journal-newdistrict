@@ -11,7 +11,7 @@ Template Name: Article Archive
 			<a href="<?php echo get_settings('home'); ?>"><img src='<?php echo get_template_directory_uri(); ?>/library/images/logo.png'></a>
 		</div>
 		<div class="text">
-			<?php query_posts("p=4"); ?>
+			<?php query_posts("p=172"); ?>
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<?php the_content(); ?>
 				<?php endwhile; endif; ?>
@@ -28,22 +28,22 @@ Template Name: Article Archive
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix archive_article' ); ?> role="article">
-
-
-			<div class=" clearfix" style="background-image: url('<?php echo the_field('featured_image'); ?>'); background-size:cover; background-position: center center;">
-				<div class='relative_container archive_image'>
-					<div class='content_aligned'>
-						<div class="archive_text">
-							<div class='archive_title'>
-								<?php the_title(); ?>
-							</div>
-							<div class='archive_subtitle'>
-								<?php the_field('subtitle'); ?>
-							</div>
+	<a href='<?php the_permalink() ?>'>
+		<div class=" clearfix" style="background-image: url('<?php echo the_field('featured_image'); ?>'); background-size:cover; background-position: center center;">
+			<div class='relative_container archive_image'>
+				<div class='content_aligned'>
+					<div class="archive_text">
+						<div class='archive_title'>
+							<?php the_title(); ?>
+						</div>
+						<div class='archive_subtitle'>
+							<?php the_field('subtitle'); ?>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+	</a>
 </article>
 
 
