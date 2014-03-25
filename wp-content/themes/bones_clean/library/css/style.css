@@ -802,6 +802,12 @@ a:link, a:visited:link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
 }
 
+p a {
+  text-decoration: none;
+  border-bottom: 1px solid lightgray;
+  color: dimgray;
+}
+
 .main_footer {
   margin-top: 2em;
   margin-bottom: .35em;
@@ -834,9 +840,10 @@ a:link, a:visited:link {
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-rendering: optimizelegibility;
-  font-weight: 500;
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
   /*
   if you're going to use webfonts, be sure to check your weights
   http://css-tricks.com/watch-your-font-weight/
@@ -889,6 +896,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 1.125em;
+  margin: 2em 0;
 }
 
 h4, .h4 {
