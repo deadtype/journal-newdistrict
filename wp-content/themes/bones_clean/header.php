@@ -9,7 +9,7 @@
 		<meta charset="utf-8">
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title><?php get_bloginfo( 'name' ); ?> | <?php wp_title(''); ?></title>
+		<title>	<?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); // if we're on the home page, show the description, from the site's settings - otherwise, show the title of the post or page ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 		<?php wp_head(); ?>
