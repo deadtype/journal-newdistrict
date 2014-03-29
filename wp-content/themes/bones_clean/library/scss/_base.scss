@@ -376,6 +376,7 @@ and more scalable.
 	}
 	.menu-item-166 {
 		float: right;
+		margin-left:0;
 		a {
 		}
 	}
@@ -385,6 +386,7 @@ and more scalable.
 	li {
 		white-space: nowrap;
 		display: inline-block;
+		float:left;
 		a {
 			display: block;
 			text-decoration: none;

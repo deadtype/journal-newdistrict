@@ -1020,10 +1020,12 @@ and more scalable.
 }
 .nav .menu-item-166 {
   float: right;
+  margin-left: 0;
 }
 .nav li {
   white-space: nowrap;
   display: inline-block;
+  float: left;
   /*
   so you really have to rethink your dropdowns for mobile.
   you don't want to have it expand too much because the
