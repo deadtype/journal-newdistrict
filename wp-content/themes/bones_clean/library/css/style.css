@@ -1156,6 +1156,11 @@ POSTS & CONTENT STYLES
   margin-top: 1em;
 }
 
+.grid_item_container a, .grid_item_container a:hover, .grid_item_container a:link, .grid_item_container a:visited {
+  text-decoration: none;
+  color: #222;
+}
+
 .grid_item_colour_cover {
   background: rgba(0, 0, 0, 0.55);
   -webkit-transition: background 0.5s ease-out;
@@ -1541,7 +1546,7 @@ view.
   }
 
   .grid_item_container {
-    height: 17.5em;
+    height: 18em;
   }
 
   .grid_item_container {
@@ -1549,10 +1554,6 @@ view.
     padding-left: .6em;
     padding-right: .6em;
     float: left;
-  }
-  .grid_item_container a, .grid_item_container a:hover, .grid_item_container a:link, .grid_item_container a:visited {
-    text-decoration: none;
-    color: #222;
   }
 
   .grid_title {
@@ -1634,7 +1635,7 @@ view.
   }
 
   .grid_item_container {
-    height: 22em;
+    height: 23em;
   }
 }
 @media only screen and (min-width: 65em) {
@@ -1664,7 +1665,7 @@ view.
   }
 
   .grid_item_container {
-    height: 19em;
+    height: 20em;
   }
 
   .content_wrap {
@@ -1696,7 +1697,7 @@ view.
   }
 
   .grid_item_container {
-    height: 22em;
+    height: 23em;
   }
 
   .article_abstract {
@@ -1723,6 +1724,10 @@ view.
 @media only screen and (min-width: 1900px) {
   .grid_item {
     height: 16em;
+  }
+
+  .grid_item_container {
+    height: 24em;
   }
 }
 /*
