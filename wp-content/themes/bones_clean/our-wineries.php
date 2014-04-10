@@ -22,24 +22,24 @@ Template Name: Our Wineries Template
 	<?php bones_main_nav(); ?>
 </div>
 
-<div class='clearfix'>
-<?php query_posts("orderby=rand&post_type=wineries"); ?>
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<a href='<?php echo the_field('winery_link'); ?>' target="_blank">
-			<div class=''>
-				<div class='grid_item' style="background-image: url('<?php echo the_field('winery_image'); ?>'); background-size:cover; background-position: center center;">
-					<div class="relative_container grid_item_colour_cover">
-						<div class="perfect_centered_layout">
-							<div class="control_box">
-								<div class='grid_title'><?php the_title(); ?></div>
-							</div>
+<div class='wineries_wrap clearfix'>
+	<?php query_posts("orderby=rand&post_type=wineries"); ?>
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				<section class='grid_item_container'>
+					<a href='<?php echo the_field('winery_link'); ?>' target="_blank">
+
+					<div class='grid_item' style="background-image: url('<?php echo the_field('winery_image'); ?>'); background-size:cover; background-position: center center;">
+						<div class="relative_container grid_item_colour_cover">
 						</div>
 					</div>
-				</div>
-			</div>
-		</a>
-	<?php endwhile; endif; ?>
-<?php wp_reset_query(); // reset the query ?>
+					</a>
+
+					<div class='grid_title'><?php the_title(); ?></div>
+					<div class='grid_about'><?php the_field('winery_about'); ?></div>
+
+				</section>
+		<?php endwhile; endif; ?>
+	<?php wp_reset_query(); // reset the query ?>
 </div>
 
 <?php get_footer(); ?>
