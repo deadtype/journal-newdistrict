@@ -34,8 +34,8 @@ Template Name: Our Wineries Template
 					</div>
 					</a>
 
-					<div class='grid_title'><?php the_title(); ?></div>
-					<div class='grid_about'><?php the_field('winery_about'); ?></div>
+					<div class='grid_title'><a href='<?php echo the_field('winery_link'); ?>' target="_blank"><?php the_title(); ?></a></div>
+					<div class='grid_about'><a href='<?php echo the_field('winery_link'); ?>' target="_blank"><?php the_field('winery_about'); ?></a></div>
 
 				</section>
 		<?php endwhile; endif; ?>
