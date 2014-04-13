@@ -6,7 +6,8 @@
 							</div>
 							<div class="social link"><a target="_blank" href="https://twitter.com/newdistrictbc">Twitter</a></div>
 							<div class="social link"><a target="_blank" href="http://instagram.com/newdistrict">Instagram</a></div>
-							<div class="social link"><a  href="mailto:info@newdistrict.ca">Email</a></div>
+							<div class="social link"><a target="_blank" href="https://www.facebook.com/newdistrict">Facebook</a></div>
+							<div class="social link"><a  href="mailto:info@newdistrict.ca">Email Us</a></div>
 
 				</div>
 
