@@ -6,8 +6,9 @@ Template Name: Article Archive
 
 <?php get_header(); ?>
 
-	<div class='content_wrap'>
  		<?php 	get_template_part('/general_partials/site_header_logo'); ?>
+ 			<div class='content_wrap'>
+
 		<div class="text">
 			<?php query_posts("p=172"); ?>
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

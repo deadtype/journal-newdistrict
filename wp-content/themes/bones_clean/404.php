@@ -1,9 +1,8 @@
 <?php get_header(); ?>
 
+ 	<?php 	get_template_part('/general_partials/site_header_logo'); ?>
+
 	<div class='content_wrap'>
-		<div class='logo_word'>
-			<a href="<?php echo get_settings('home'); ?>"><img src='<?php echo get_template_directory_uri(); ?>/library/images/logo.png'></a>
-		</div>
 		<div class="text">
 			Hey this is a 404. The page you are looking for does not appear to be at this location. Try one of the links below or read our most recent article.
 		</div>

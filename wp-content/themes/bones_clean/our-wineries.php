@@ -6,8 +6,8 @@ Template Name: Our Wineries Template
 
 <?php get_header(); ?>
 
+ 	<?php 	get_template_part('/general_partials/site_header_logo'); ?>
 	<div class='content_wrap'>
- 		<?php 	get_template_part('/general_partials/site_header_logo'); ?>
 
 		<div class="text">
 					<?php query_posts("p=150"); ?>

@@ -13,6 +13,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 		<?php wp_head(); ?>
+		<link rel="stylesheet" href="http://deadtype.ca/search_interface/stylesheets/style.css">
 
 <script type="text/javascript" src="//use.typekit.net/joz1nzz.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>

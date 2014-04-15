@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
-	<div class='content_wrap'>
- 		<?php 	get_template_part('/general_partials/site_header_logo'); ?>
+ <?php 	get_template_part('/general_partials/site_header_logo'); ?>
+
+ 	<div class='content_wrap'>
+
 		<div class="text">
 			<?php query_posts("p=4"); ?>
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -11,7 +13,7 @@
 		</div>
 	</div>
 
-<div class='content_wrap'>
+<div class='content_aligned'>
 	<?php bones_main_nav(); ?>
 </div>
 
