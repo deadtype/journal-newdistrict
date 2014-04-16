@@ -13,7 +13,7 @@
 		</div>
 	</div>
 
-<div class='content_aligned'>
+<div class='content_wrap'>
 	<?php bones_main_nav(); ?>
 </div>
 

@@ -1,10 +1,8 @@
 <?php get_header(); ?>
 
 
-	<div class='content_wrap'>
  		<?php 	get_template_part('/general_partials/site_header_logo'); ?>
 
-	</div>
 
 	<div class='single_article'>
 		<div class='content_wrap'>

@@ -1,14 +1,16 @@
 			<footer class="main_footer" role="contentinfo">
-
 				<div class="content_wrap">
-							<div class='logo_word social'>
-								<a href="<?php echo get_settings('home'); ?>"><img src='<?php echo get_template_directory_uri(); ?>/library/images/logo.png'></a>
-							</div>
-							<div class="social link"><a target="_blank" href="https://twitter.com/newdistrictbc">Twitter</a></div>
-							<div class="social link"><a target="_blank" href="http://instagram.com/newdistrict">Instagram</a></div>
-							<div class="social link"><a target="_blank" href="https://www.facebook.com/newdistrict">Facebook</a></div>
-							<div class="social link"><a  href="mailto:info@newdistrict.ca">Email Us</a></div>
-
+					<div class='logo_container clearfix'>
+						<div class='logo_word social'>
+							<a href="<?php echo get_settings('home'); ?>"><img src='<?php echo get_template_directory_uri(); ?>/library/images/logo.png'></a>
+						</div>
+					</div>
+					<div class='social_link_container'>
+						<div class="social link"><a target="_blank" href="https://twitter.com/newdistrictbc">Twitter</a></div>
+						<div class="social link"><a target="_blank" href="http://instagram.com/newdistrict">Instagram</a></div>
+						<div class="social link"><a target="_blank" href="https://www.facebook.com/newdistrict">Facebook</a></div>
+						<div class="social link"><a  href="mailto:info@newdistrict.ca">Email Us</a></div>
+					</div>
 				</div>
 
 			</footer>

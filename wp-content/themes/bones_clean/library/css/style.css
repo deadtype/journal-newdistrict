@@ -1019,13 +1019,6 @@ and more scalable.
   /* highlight current page */
   /* end current highlighters */
 }
-.nav li + li {
-  margin-left: 2em;
-}
-.nav .menu-item-166 {
-  float: right;
-  margin-left: 0;
-}
 .nav li {
   white-space: nowrap;
   display: inline-block;
