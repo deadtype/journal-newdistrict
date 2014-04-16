@@ -9,9 +9,9 @@
               </div>
         </div>
         <div class='site_wide_nav'>
-            <span><a href='http://192.168.1.65:4200'>buy our wines</a></span>
-            <span class='active'><a href='http://192.168.1.65/journal-newdistrict/'>learn about</a></span>
-            <span class="small_screen active">menu</span>
+            <a href='http://192.168.1.65:4200'><span>buy our wines</span></a>
+            <a href='http://192.168.1.65/journal-newdistrict/' class='active'><span >learn about</span></a>
+            <a class="small_screen active"><span>menu</span></a>
         </div>
     </div>
 </header>
