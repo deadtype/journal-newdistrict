@@ -10,7 +10,7 @@
         </div>
         <div class='site_wide_nav'>
             <a href='http://192.168.1.65:4200'><span>buy our wines</span></a>
-            <a href='http://192.168.1.65/journal-newdistrict/' class='active'><span >learn about</span></a>
+            <a href='http://192.168.1.65/journal-newdistrict/' class='active'><span >wine stories</span></a>
             <a class="small_screen active"><span>menu</span></a>
         </div>
     </div>

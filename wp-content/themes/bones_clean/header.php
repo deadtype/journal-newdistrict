@@ -20,6 +20,8 @@
 	</head>
 
 	<body <?php body_class(); ?>>
+		      <div class='site_wrapper clearfix'>
+
 
 
 
