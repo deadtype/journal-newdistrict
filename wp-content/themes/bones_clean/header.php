@@ -13,14 +13,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 		<?php wp_head(); ?>
-		<link rel="stylesheet" href="http://192.168.1.65:4200/stylesheets/style.css">
+		<link rel="stylesheet" href="http://deadtype.ca/search_interface/stylesheets/style.css">
 
 <script type="text/javascript" src="//use.typekit.net/joz1nzz.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
 
 	<body <?php body_class(); ?>>
-		      <div class='site_wrapper clearfix'>
+
+      <!--<div class='content_aligned'>
+        <nav class="major_nav clearfix" role='navigation'>
+          <div class=' mobile_menu clearfix'>
+            <div class='mobile_logo_container'>
+               <div class='logo'>
+               	<img src='<?php echo get_template_directory_uri(); ?>/library/images/new_dist_logo_white.png'>
+              </div>
+            </div>
+              <div class='mobile_link'><a href='http://localhost:4200' class='active'><span>buy our wines</span></a></div>
+              <div class='mobile_link'><a href='http://localhost/journal-newdistrict/'><span>Wine Stories</span></a></div>
+          </div>
+        </nav>
+      </div>-->
+
+
+		<div class='site_wrapper clearfix'>
 
 
 

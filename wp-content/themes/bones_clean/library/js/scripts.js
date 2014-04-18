@@ -138,3 +138,14 @@ $(document).ready(function() {
         viewport();
     });
 });
+
+$(document).ready(function() {
+  $('body').addClass('js');
+  var $menu = $('.major_nav'),
+    $menulink = $('.menu-link');
+
+$menulink.click(function() {
+  $menu.toggleClass('active');
+  return false;
+});});
+
