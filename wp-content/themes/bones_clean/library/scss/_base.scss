@@ -342,17 +342,6 @@ NAVIGATION STYLES
 	margin-top: 4em;
 }
 
-.single {
-	.menu-item-158 {
-		a {
-			color: black;
-		}
-	}
-	.nav .menu-item-166 {
-		a {
-		}
-	}
-}
 /*
 all navs have a .nav class applied via
 the wp_menu function; this is so we can
@@ -595,7 +584,7 @@ POSTS & CONTENT STYLES
 }
 
 .featured_article {
-	margin-bottom: 5em;
+	margin-bottom: 2em;
 }
 
 #content {

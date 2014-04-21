@@ -30,6 +30,18 @@ Template Name: Article Archive
 	<a href='<?php the_permalink() ?>'>
 		<div class=" clearfix" style="background-image: url('<?php echo the_field('featured_image'); ?>'); background-size:cover; background-position: center center;">
 			<div class='relative_container archive_image'>
+
+				<div class='published_on'>
+					<div class='content_wrap'>
+
+					<p class="byline vcard"><?php
+						printf( __( '<!--Published--><time class="updated" datetime="%1$s" pubdate>%2$s</time><!-- by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.-->', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));
+					?></p>
+					</div>
+				</div>
+
+
+
 				<div class='content_aligned'>
 					<div class="archive_text">
 						<div class='archive_title'>

@@ -18,7 +18,7 @@
 </div>
 
 
-<?php query_posts("post_count=1&post_type=editorial_articles"); ?>
+<?php query_posts("posts_per_page=1&post_count=1&post_type=editorial_articles"); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix featured_article' ); ?> role="article">
@@ -111,6 +111,7 @@
 
 
 
+
 		<?php if ( function_exists( 'bones_page_navi' ) ) { ?>
 				<?php bones_page_navi(); ?>
 		<?php } else { ?>
@@ -140,4 +141,47 @@
 
 
 
-<?php get_footer(); ?>
+
+<?php $the_query = new WP_Query( "posts_per_page=1&offset=1&post_type=editorial_articles" ); ?>
+
+<?php if ( $the_query->have_posts() ) : ?>
+  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+		<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix archive_article' ); ?> role="article">
+			<a href='<?php the_permalink() ?>'>
+				<div class=" clearfix" style="background-image: url('<?php echo the_field('featured_image'); ?>'); background-size:cover; background-position: center center;">
+					<div class='relative_container archive_image'>
+						<div class="published_on">
+							<div class="content_wrap">
+
+							<p class="byline vcard">Read Next Article</p>
+							</div>
+						</div>
+						<div class='content_aligned'>
+							<div class="archive_text">
+								<div class='archive_title'>
+									<?php the_title(); ?>
+								</div>
+								<div class='archive_subtitle'>
+									<?php the_field('subtitle'); ?>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</article>
+
+  <?php endwhile; ?>
+
+
+<?php wp_reset_postdata(); ?>
+
+<?php else:  ?>
+  <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+<?php endif; ?>
+
+
+
+<?php get_footer();
+
