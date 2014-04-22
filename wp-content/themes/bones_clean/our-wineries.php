@@ -10,7 +10,7 @@ Template Name: Our Wineries Template
 	<div class='content_wrap'>
 
 		<div class="text">
-					<?php query_posts("p=150"); ?>
+			<?php query_posts("p=150"); ?>
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<?php the_content(); ?>
 				<?php endwhile; endif; ?>
@@ -23,8 +23,9 @@ Template Name: Our Wineries Template
 </div>
 
 <div class='wineries_wrap clearfix'>
-	<?php query_posts("orderby=rand&post_type=wineries"); ?>
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<?php $the_query = new WP_Query( "orderby=rand&post_type=wineries" ); ?>
+		<?php if ( $the_query->have_posts() ) : ?>
+		  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 				<section class='grid_item_container'>
 					<a href='<?php echo the_field('winery_link'); ?>' target="_blank">
 
@@ -36,10 +37,14 @@ Template Name: Our Wineries Template
 
 					<div class='grid_title'><a href='<?php echo the_field('winery_link'); ?>' target="_blank"><?php the_title(); ?></a></div>
 					<div class='grid_about'><a href='<?php echo the_field('winery_link'); ?>' target="_blank"><?php the_field('winery_about'); ?></a></div>
-
 				</section>
-		<?php endwhile; endif; ?>
-	<?php wp_reset_query(); // reset the query ?>
+			<?php endwhile; ?>
+	<?php wp_reset_postdata(); ?>
+
+	<?php else:  ?>
+	  <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+	<?php endif; ?>
+
 </div>
 
 <?php get_footer(); ?>

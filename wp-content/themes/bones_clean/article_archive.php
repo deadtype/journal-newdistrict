@@ -23,8 +23,11 @@ Template Name: Article Archive
 </div>
 
 
-<?php query_posts("&post_type=editorial_articles"); ?>
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php $the_query = new WP_Query( "&post_type=editorial_articles" ); ?>
+
+<?php if ( $the_query->have_posts() ) : ?>
+  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix archive_article' ); ?> role="article">
 	<a href='<?php the_permalink() ?>'>
@@ -57,38 +60,15 @@ Template Name: Article Archive
 	</a>
 </article>
 
-
-<?php endwhile; ?>
-<?php wp_reset_query(); // reset the query ?>
+  <?php endwhile; ?>
 
 
+<?php wp_reset_postdata(); ?>
 
-		<?php if ( function_exists( 'bones_page_navi' ) ) { ?>
-				<?php bones_page_navi(); ?>
-		<?php } else { ?>
-				<nav class="wp-prev-next">
-						<ul class="clearfix">
-							<li class="prev-link"><?php next_posts_link( __( '&laquo; Older Entries', 'bonestheme' )) ?></li>
-							<li class="next-link"><?php previous_posts_link( __( 'Newer Entries &raquo;', 'bonestheme' )) ?></li>
-						</ul>
-				</nav>
-		<?php } ?>
-
-<?php else : ?>
-
-		<article id="post-not-found" class="hentry clearfix">
-				<header class="article-header">
-					<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-			</header>
-				<section class="entry-content">
-					<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-			</section>
-			<footer class="article-footer">
-					<p><?php _e( 'This is the error message in the index.php template.', 'bonestheme' ); ?></p>
-			</footer>
-		</article>
-
+<?php else:  ?>
+  <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 <?php endif; ?>
+
 
 
 <?php get_footer(); ?>
