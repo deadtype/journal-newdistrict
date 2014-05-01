@@ -12,12 +12,12 @@
 				<?php wp_reset_query(); // reset the query ?>
               </div>
         </div>
-        <!-- <div class='site_wide_nav big_screen'>
-            <a href='http://localhost:4200'><span>buy our wines</span></a>
-            <a href='http://localhost/journal-newdistrict/' class='active'><span >wine stories</span></a>
+        <div class='site_wide_nav big_screen'>
+            <a href='http://newdistrict.ca'><span>our wines</span></a>
+            <a href='http://stories.newdistrict.ca' class='active'><span >our stories</span></a>
           </div>
           <div class='site_wide_nav small_screen'>
             <a class="small_screen active menu-link"><span>menu</span></a>
-          </div>-->
+          </div>
     </div>
 </header>

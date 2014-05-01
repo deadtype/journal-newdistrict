@@ -21,7 +21,7 @@
 
 	<body <?php body_class(); ?>>
 
-      <!--<div class='content_aligned'>
+      <div class='content_aligned'>
         <nav class="major_nav clearfix" role='navigation'>
           <div class=' mobile_menu clearfix'>
             <div class='mobile_logo_container'>
@@ -29,11 +29,11 @@
                	<img src='<?php echo get_template_directory_uri(); ?>/library/images/new_dist_logo_white.png'>
               </div>
             </div>
-              <div class='mobile_link'><a href='http://localhost:4200' class='active'><span>buy our wines</span></a></div>
-              <div class='mobile_link'><a href='http://localhost/journal-newdistrict/'><span>Wine Stories</span></a></div>
+              <div class='mobile_link'><a href='http://newdistrict.ca' ><span>our wines</span></a></div>
+              <div class='mobile_link'><a href='http://stories.newdistrict.ca' class='active'><span>our Stories</span></a></div>
           </div>
         </nav>
-      </div>-->
+      </div>
 
 
 		<div class='site_wrapper clearfix'>
