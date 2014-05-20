@@ -5,21 +5,7 @@
 							<a href="<?php echo get_settings('home'); ?>"><img src='<?php echo get_template_directory_uri(); ?>/library/images/logo.png'></a>
 						</div>
 					</div>
-<div class="social_link_container">
-      <div class="social link"><a href="https://twitter.com/newdistrictbc" target="_blank">Twitter</a></div>
-      <div class="social link"><a href="http://instagram.com/newdistrict" target="_blank">Instagram</a></div>
-      <div class="social link"><a href="https://www.facebook.com/newdistrict" target="_blank">Facebook</a></div>
-      <div class="social link"><a href="mailto:info@newdistrict.ca">Email Us</a></div>
-      <div class="social link"><a href="http://newdistrict.ca/privacy_policy">Privacy Policy</a></div>
-      <div class="social link"><a href="http://newdistrict.ca/terms">Terms of Use</a></div>
-      <div class="social link"><a href="http://newdistrict.ca/takedown">Take-Down Policy</a></div>
-      <div class="social link"><a href="http://newdistrict.ca/how_it_works">How New District works</a></div>
-      <div class="social link"><a href="http://newdistrict.ca/join_our_marketplace">Join Our Marketplace</a></div>
-      <div class="social link"><a href="http://newdistrict.ca/our_producers">Our Producers</a></div>
-      <div class="social link"><a href="http://stories.newdistrict.ca/" target="_blank">Blog</a></div>
-      <div class="social link"><a href="http://newdistrict.ca/media_enquiries">Media Enquiries</a></div>
-      <!--<div class='social link copyright'><a>All Rights Reserved.</a></div>-->
-    </div>
+    				<?php bones_footer_links(); ?>
 				</div>
 
 			</footer>

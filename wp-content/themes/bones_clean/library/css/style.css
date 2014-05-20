@@ -28,8 +28,7 @@ main,
 nav,
 section,
 summary {
-  display: block;
-}
+  display: block; }
 
 /**
  * Correct `inline-block` display not defined in IE 8/9.
@@ -37,8 +36,7 @@ summary {
 audio,
 canvas,
 video {
-  display: inline-block;
-}
+  display: inline-block; }
 
 /**
  * Prevent modern browsers from displaying `audio` without controls.
@@ -46,8 +44,7 @@ video {
  */
 audio:not([controls]) {
   display: none;
-  height: 0;
-}
+  height: 0; }
 
 /**
  * Address `[hidden]` styling not present in IE 8/9.
@@ -55,8 +52,7 @@ audio:not([controls]) {
  */
 [hidden],
 template {
-  display: none;
-}
+  display: none; }
 
 /* ==========================================================================
    Base
@@ -72,15 +68,13 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Remove default margin.
  */
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 /* ==========================================================================
    Links
@@ -89,23 +83,20 @@ body {
  * Remove the gray background color from active links in IE 10.
  */
 a {
-  background: transparent;
-}
+  background: transparent; }
 
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 a:focus {
-  outline: thin dotted;
-}
+  outline: thin dotted; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 a:active,
 a:hover {
-  outline: 0;
-}
+  outline: 0; }
 
 /* ==========================================================================
    Typography
@@ -116,30 +107,26 @@ a:hover {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
-}
+  margin: 0.67em 0; }
 
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
 abbr[title] {
-  border-bottom: 1px dotted;
-}
+  border-bottom: 1px dotted; }
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
 b,
 strong {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
 dfn {
-  font-style: italic;
-}
+  font-style: italic; }
 
 /**
  * Address differences between Firefox and other browsers.
@@ -147,16 +134,14 @@ dfn {
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  height: 0;
-}
+  height: 0; }
 
 /**
  * Address styling not present in IE 8/9.
  */
 mark {
   background: #ff0;
-  color: #000;
-}
+  color: #000; }
 
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
@@ -166,29 +151,25 @@ kbd,
 pre,
 samp {
   font-family: monospace, serif;
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
 pre {
-  white-space: pre-wrap;
-}
+  white-space: pre-wrap; }
 
 /**
  * Set consistent quote types.
  */
 q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
-}
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
 
 /**
  * Address inconsistent and variable font size in all browsers.
  */
 small {
-  font-size: 80%;
-}
+  font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
@@ -198,16 +179,13 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 sup {
-  top: -0.5em;
-}
+  top: -0.5em; }
 
 sub {
-  bottom: -0.25em;
-}
+  bottom: -0.25em; }
 
 /* ==========================================================================
    Embedded content
@@ -217,15 +195,13 @@ sub {
  */
 img {
   border: 0;
-  width: 100%;
-}
+  width: 100%; }
 
 /**
  * Correct overflow displayed oddly in IE 9.
  */
 svg:not(:root) {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 /* ==========================================================================
    Figures
@@ -234,8 +210,7 @@ svg:not(:root) {
  * Address margin not present in IE 8/9 and Safari 5.
  */
 figure {
-  margin: 0;
-}
+  margin: 0; }
 
 /* ==========================================================================
    Forms
@@ -246,8 +221,7 @@ figure {
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
+  padding: 0.35em 0.625em 0.75em; }
 
 /**
  * 1. Correct `color` not being inherited in IE 8/9.
@@ -257,8 +231,7 @@ legend {
   border: 0;
   /* 1 */
   padding: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * 1. Correct font family not being inherited in all browsers.
@@ -274,8 +247,7 @@ textarea {
   font-size: 100%;
   /* 2 */
   margin: 0;
-  /* 3 */
-}
+  /* 3 */ }
 
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
@@ -283,8 +255,7 @@ textarea {
  */
 button,
 input {
-  line-height: normal;
-}
+  line-height: normal; }
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -294,8 +265,7 @@ input {
  */
 button,
 select {
-  text-transform: none;
-}
+  text-transform: none; }
 
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -311,16 +281,14 @@ input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
-  /* 3 */
-}
+  /* 3 */ }
 
 /**
  * Re-set default cursor for disabled elements.
  */
 button[disabled],
 html input[disabled] {
-  cursor: default;
-}
+  cursor: default; }
 
 /**
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
@@ -331,8 +299,7 @@ input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -345,8 +312,7 @@ input[type="search"] {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-  box-sizing: content-box;
-}
+  box-sizing: content-box; }
 
 /**
  * Remove inner padding and search cancel button in Safari 5 and Chrome
@@ -354,8 +320,7 @@ input[type="search"] {
  */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
@@ -363,8 +328,7 @@ input[type="search"]::-webkit-search-decoration {
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /**
  * 1. Remove default vertical scrollbar in IE 8/9.
@@ -374,8 +338,7 @@ textarea {
   overflow: auto;
   /* 1 */
   vertical-align: top;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* ==========================================================================
    Tables
@@ -385,8 +348,7 @@ textarea {
  */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 /******************************************************************
 CUSTOMIZED RESET VALUES
@@ -398,35 +360,28 @@ p {
   -webkit-hyphens: auto;
   -epub-hyphens: auto;
   -moz-hyphens: auto;
-  hyphens: auto;
-}
+  hyphens: auto; }
 
 b, strong, .strong {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 dfn, em, .em {
-  font-style: italic;
-}
+  font-style: italic; }
 
 small, .small {
-  font-size: 75%;
-}
+  font-size: 75%; }
 
 ul, ol {
   padding: 0;
-  list-style-type: none;
-}
+  list-style-type: none; }
 
 dd {
-  margin: 0;
-}
+  margin: 0; }
 
 .sidebar ul,
 .sidebar ol,
 .commentlist {
-  list-style: none;
-}
+  list-style: none; }
 
 /******************************************************************
 Site Name:
@@ -448,15 +403,12 @@ remember less is more.
 CLEARFIXIN'
 *********************/
 .clearfix {
-  zoom: 1;
-}
-.clearfix:before, .clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
+  zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: "";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
 
 /*********************
 TOOLS
@@ -464,14 +416,12 @@ TOOLS
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .image-replacement {
   text-indent: 100%;
   white-space: nowrap;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 /*********************
 COLORS
@@ -510,46 +460,37 @@ http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
 span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
-  font-style: italic;
-}
+  font-style: italic; }
 
 .text-left {
-  text-align: left;
-}
+  text-align: left; }
 
 .text-center {
-  text-align: center;
-}
+  text-align: center; }
 
 .text-right {
-  text-align: right;
-}
+  text-align: right; }
 
 .alert-help, .alert-info, .alert-error, .alert-success {
   margin: 10px;
   padding: 5px 18px;
-  border: 1px solid;
-}
+  border: 1px solid; }
 
 .alert-help {
   border-color: #e8dc59;
-  background: #ebe16f;
-}
+  background: #ebe16f; }
 
 .alert-info {
   border-color: #bfe4f4;
-  background: #d5edf8;
-}
+  background: #d5edf8; }
 
 .alert-error {
   border-color: #f8cdce;
-  background: #fbe3e4;
-}
+  background: #fbe3e4; }
 
 .alert-success {
   border-color: #deeaae;
-  background: #e6efc2;
-}
+  background: #e6efc2; }
 
 /*********************
 TRANSITION
@@ -596,28 +537,25 @@ BUTTONS
   background-image: -webkit-linear-gradient(top, #ababab, #9e9e9e);
   background-image: -moz-linear-gradient(top, #ababab, #9e9e9e);
   background-image: -o-linear-gradient(top, #ababab, #9e9e9e);
-  background-image: linear-gradient(to bottom, #ababab, #9e9e9e);
-}
-.button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
-  color: white;
-  border: 1px solid #8a8a8a;
-  border-top-color: #787878;
-  border-left-color: #787878;
-  background-color: #919191;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9e9e9e), to(#919191));
-  background-image: -webkit-linear-gradient(top, #9e9e9e, #919191);
-  background-image: -moz-linear-gradient(top, #9e9e9e, #919191);
-  background-image: -o-linear-gradient(top, #9e9e9e, #919191);
-  background-image: linear-gradient(to bottom, #9e9e9e, #919191);
-}
-.button:active, .button:visited:active {
-  background-color: #ababab;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9e9e9e), to(#ababab));
-  background-image: -webkit-linear-gradient(top, #9e9e9e, #ababab);
-  background-image: -moz-linear-gradient(top, #9e9e9e, #ababab);
-  background-image: -o-linear-gradient(top, #9e9e9e, #ababab);
-  background-image: linear-gradient(to bottom, #9e9e9e, #ababab);
-}
+  background-image: linear-gradient(to bottom, #ababab, #9e9e9e); }
+  .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
+    color: white;
+    border: 1px solid #8a8a8a;
+    border-top-color: #787878;
+    border-left-color: #787878;
+    background-color: #919191;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9e9e9e), to(#919191));
+    background-image: -webkit-linear-gradient(top, #9e9e9e, #919191);
+    background-image: -moz-linear-gradient(top, #9e9e9e, #919191);
+    background-image: -o-linear-gradient(top, #9e9e9e, #919191);
+    background-image: linear-gradient(to bottom, #9e9e9e, #919191); }
+  .button:active, .button:visited:active {
+    background-color: #ababab;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9e9e9e), to(#ababab));
+    background-image: -webkit-linear-gradient(top, #9e9e9e, #ababab);
+    background-image: -moz-linear-gradient(top, #9e9e9e, #ababab);
+    background-image: -o-linear-gradient(top, #9e9e9e, #ababab);
+    background-image: linear-gradient(to bottom, #9e9e9e, #ababab); }
 
 .blue-button, .blue-button:visited {
   border-color: #1472ad;
@@ -628,25 +566,22 @@ BUTTONS
   background-image: -moz-linear-gradient(top, #1990db, #1681c4);
   background-image: -o-linear-gradient(top, #1990db, #1681c4);
   background-image: linear-gradient(to bottom, #1990db, #1681c4);
-  box-shadow: inset 0 0 3px #59b3ec;
-}
-.blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
-  border-color: #116396;
-  background-color: #1472ad;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1784c9), to(#1472ad));
-  background-image: -webkit-linear-gradient(top, #1784c9, #1472ad);
-  background-image: -moz-linear-gradient(top, #1784c9, #1472ad);
-  background-image: -o-linear-gradient(top, #1784c9, #1472ad);
-  background-image: linear-gradient(to bottom, #1784c9, #1472ad);
-}
-.blue-button:active, .blue-button:visited:active {
-  background-color: #1990db;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
-  background-image: -webkit-linear-gradient(top, #1681c4, #1990db);
-  background-image: -moz-linear-gradient(top, #1681c4, #1990db);
-  background-image: -o-linear-gradient(top, #1681c4, #1990db);
-  background-image: linear-gradient(to bottom, #1681c4, #1990db);
-}
+  box-shadow: inset 0 0 3px #59b3ec; }
+  .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
+    border-color: #116396;
+    background-color: #1472ad;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1784c9), to(#1472ad));
+    background-image: -webkit-linear-gradient(top, #1784c9, #1472ad);
+    background-image: -moz-linear-gradient(top, #1784c9, #1472ad);
+    background-image: -o-linear-gradient(top, #1784c9, #1472ad);
+    background-image: linear-gradient(to bottom, #1784c9, #1472ad); }
+  .blue-button:active, .blue-button:visited:active {
+    background-color: #1990db;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
+    background-image: -webkit-linear-gradient(top, #1681c4, #1990db);
+    background-image: -moz-linear-gradient(top, #1681c4, #1990db);
+    background-image: -o-linear-gradient(top, #1681c4, #1990db);
+    background-image: linear-gradient(to bottom, #1681c4, #1990db); }
 
 /*
 BASE (MOBILE) SIZE
@@ -673,8 +608,7 @@ GENERAL STYLES
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 600;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 body {
   font-family: "minion-pro",sans-serif;
@@ -697,36 +631,29 @@ body {
   -webkit-font-feature-settings: "liga";
   font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
-  margin-top: .7em;
-}
+  margin-top: .7em; }
 
 .maincontainer {
-  max-width: 1300px;
-}
+  max-width: 1300px; }
 
 .wineries_wrap {
-  width: 87.5%;
-}
+  width: 87.5%; }
 
 .content_wrap {
   width: 87.5%;
-  position: relative;
-}
+  position: relative; }
 
 .content_wrap, .wineries_wrap {
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 .content_aligned {
   margin-left: 6.25%;
-  margin-right: 6.25%;
-}
+  margin-right: 6.25%; }
 
 .relative_container {
   height: 100%;
-  position: relative;
-}
+  position: relative; }
 
 /********************
 WORDPRESS BODY CLASSES
@@ -772,8 +699,7 @@ LAYOUT & GRID STYLES
 *********************/
 .wrap {
   width: 96%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 /*********************
 LINK STYLES
@@ -787,52 +713,42 @@ a, a:visited {
   transition: color 0.3s ease-out;
   /* on hover */
   /* on click */
-  /* mobile tap color */
-}
-a:hover, a:focus, a:visited:hover, a:visited:focus {
-  color: black;
-  -webkit-transition: color 0.3s ease-out;
-  -moz-transition: color 0.3s ease-out;
-  -o-transition: color 0.3s ease-out;
-  -ms-transition: color 0.3s ease-out;
-  transition: color 0.3s ease-out;
-}
-a:link, a:visited:link {
-  /*
-  this highlights links on iPhones/iPads.
-  so it basically works like the :hover selector
-  for mobile devices.
-  */
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
-}
+  /* mobile tap color */ }
+  a:hover, a:focus, a:visited:hover, a:visited:focus {
+    color: black;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out; }
+  a:link, a:visited:link {
+    /*
+    this highlights links on iPhones/iPads.
+    so it basically works like the :hover selector
+    for mobile devices.
+    */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
 
 .main_footer {
   margin-top: 2em;
-  margin-bottom: .5em;
-}
+  margin-bottom: .5em; }
 
 .social {
-  display: inline-block;
-}
-.social a {
-  text-decoration: none;
-}
+  display: inline-block; }
+  .social a {
+    text-decoration: none; }
 
 .social + .social {
-  margin-right: 2em;
-}
+  margin-right: 2em; }
 
 .social.logo_word {
   width: 4.6em;
-  display: block;
-}
-.social.logo_word img {
-  vertical-align: 2px;
-}
+  display: block; }
+  .social.logo_word img {
+    vertical-align: 2px; }
 
 .social.link {
-  font-size: .8em;
-}
+  font-size: .8em; }
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
@@ -851,11 +767,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   -moz-hyphens: none;
   -ms-hyphens: none;
   -o-hyphens: none;
-  hyphens: none;
-}
-h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
-  text-decoration: none;
-}
+  hyphens: none; }
+  h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
+    text-decoration: none; }
 
 h1, .h1 {
   font-size: 2.5em;
@@ -865,16 +779,13 @@ h1, .h1 {
   font-weight: 600;
   color: white;
   text-transform: uppercase;
-  margin: 0;
-}
+  margin: 0; }
 
 .control_box {
-  font-size: .7em;
-}
+  font-size: .7em; }
 
 .h1 + .subtitle {
-  margin-top: .7em;
-}
+  margin-top: .7em; }
 
 .subtitle {
   color: white;
@@ -883,31 +794,26 @@ h1, .h1 {
   font-style: normal;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: .8em;
-}
+  font-size: .8em; }
 
 h2, .h2 {
   font-size: 1.75em;
   line-height: 1.4em;
-  margin-bottom: 0.375em;
-}
+  margin-bottom: 0.375em; }
 
 h3, .h3 {
   font-size: 1.125em;
-  margin: 2em 0;
-}
+  margin: 2em 0; }
 
 h4, .h4 {
   font-size: 1.1em;
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 h5, .h5 {
   font-size: 0.846em;
   line-height: 2.09em;
   text-transform: uppercase;
-  letter-spacing: 2px;
-}
+  letter-spacing: 2px; }
 
 /*********************
 HEADER STYLES
@@ -916,19 +822,16 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 .logo {
-  width: .5em;
-}
+  width: .5em; }
 
 .logo_word {
-  width: 5.9em;
-}
+  width: 5.9em; }
 
 .text {
   margin-top: 7em;
   margin-bottom: 4em;
   font-style: normal;
-  color: black;
-}
+  color: black; }
 
 .navigation {
   padding-bottom: .1em;
@@ -938,24 +841,18 @@ NAVIGATION STYLES
   font-style: normal;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: .7em;
-}
-.navigation span {
-  display: inline-block;
-}
-.navigation span + span {
-  margin-left: 2em;
-}
-.navigation a {
-  text-decoration: none;
-}
+  font-size: .7em; }
+  .navigation span {
+    display: inline-block; }
+  .navigation span + span {
+    margin-left: 2em; }
+  .navigation a {
+    text-decoration: none; }
 
 .archive_article a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 .archive_article a:hover .archive_image {
-  background: rgba(0, 0, 0, 0.3);
-}
+  background: rgba(0, 0, 0, 0.3); }
 
 .archive_image {
   background: rgba(0, 0, 0, 0.5);
@@ -963,31 +860,25 @@ NAVIGATION STYLES
   -moz-transition: background 0.5s ease-out;
   -o-transition: background 0.5s ease-out;
   -ms-transition: background 0.5s ease-out;
-  transition: background 0.5s ease-out;
-}
+  transition: background 0.5s ease-out; }
 
 .archive_text {
   font-size: 1.4em;
-  padding: 3em 0;
-}
+  padding: 3em 0; }
 
 .archive_title, .archive_subtitle {
   color: white;
-  line-height: .9;
-}
+  line-height: .9; }
 
 .archive_subtitle {
   font-size: .35em;
-  margin-top: 0.4em;
-}
+  margin-top: 0.4em; }
 
 .archive_article + .archive_article {
-  margin-top: 1em;
-}
+  margin-top: 1em; }
 
 .single_article {
-  margin-top: 4em;
-}
+  margin-top: 4em; }
 
 /*
 all navs have a .nav class applied via
@@ -1007,42 +898,36 @@ and more scalable.
   font-size: .65em;
   /* end .menu li */
   /* highlight current page */
-  /* end current highlighters */
-}
-.nav li {
-  white-space: nowrap;
-  display: inline-block;
-  float: left;
-  /*
-  so you really have to rethink your dropdowns for mobile.
-  you don't want to have it expand too much because the
-  screen is so small. How you manage your menu should
-  depend on the project. Here's some great info on it:
-  http://www.alistapart.com/articles/organizing-mobile/
-  */
-}
-.nav li a {
-  display: block;
-  text-decoration: none;
-  /*
-  remember this is for mobile ONLY, so there's no need
-  to even declare hover styles here, you can do it in
-  the style.scss file where it's relevant. We want to
-  keep this file as small as possible!
-  */
-}
-.nav li a:hover, .nav li a:focus {
-  color: black;
-}
-.nav li ul.sub-menu li a,
-.nav li ul.children li a {
-  padding-left: 30px;
-}
-.nav li.current-menu-item a,
-.nav li.current_page_item a,
-.nav li.current-page-ancestor a {
-  color: black;
-}
+  /* end current highlighters */ }
+  .nav li {
+    white-space: nowrap;
+    display: inline-block;
+    float: left;
+    /*
+    so you really have to rethink your dropdowns for mobile.
+    you don't want to have it expand too much because the
+    screen is so small. How you manage your menu should
+    depend on the project. Here's some great info on it:
+    http://www.alistapart.com/articles/organizing-mobile/
+    */ }
+    .nav li a {
+      display: block;
+      text-decoration: none;
+      /*
+      remember this is for mobile ONLY, so there's no need
+      to even declare hover styles here, you can do it in
+      the style.scss file where it's relevant. We want to
+      keep this file as small as possible!
+      */ }
+      .nav li a:hover, .nav li a:focus {
+        color: black; }
+    .nav li ul.sub-menu li a,
+    .nav li ul.children li a {
+      padding-left: 30px; }
+  .nav li.current-menu-item a,
+  .nav li.current_page_item a,
+  .nav li.current-page-ancestor a {
+    color: black; }
 
 /* end .nav */
 /*********************
@@ -1052,36 +937,30 @@ POSTS & CONTENT STYLES
   font-style: italic;
   font-size: 1.2em;
   text-align: left;
-  margin: 2em auto;
-}
+  margin: 2em auto; }
 
 .published_on {
   position: absolute;
   width: 100%;
-  top: .8em;
-}
-.published_on .vcard {
-  color: white;
-  font-family: "futura-pt",sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: .7em;
-}
+  top: .8em; }
+  .published_on .vcard {
+    color: white;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .7em; }
 
 .top_aligned .control_box {
   width: 100%;
-  top: 2.5em;
-}
+  top: 2.5em; }
 .top_aligned .published_on {
   top: auto;
-  bottom: .9em;
-}
+  bottom: .9em; }
 
 .bottom_aligned .control_box {
   width: 100%;
-  bottom: 2.5em;
-}
+  bottom: 2.5em; }
 
 .centered_aligned .control_box {
   left: 50%;
@@ -1089,12 +968,10 @@ POSTS & CONTENT STYLES
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   text-align: left;
-  width: 100%;
-}
+  width: 100%; }
 .centered_aligned .published_on {
   top: auto;
-  bottom: 1em;
-}
+  bottom: 1em; }
 
 .perfect_centered_layout .control_box {
   left: 50%;
@@ -1102,47 +979,38 @@ POSTS & CONTENT STYLES
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   text-align: center;
-  width: 90%;
-}
+  width: 90%; }
 
 .custom_title .control_box {
-  visibility: hidden;
-}
+  visibility: hidden; }
 
 .control_box {
-  position: absolute;
-}
+  position: absolute; }
 
 .full, .ninety, .three_quarters, .two_thirds .half {
-  position: relative;
-}
+  position: relative; }
 
 .centered_layout {
   text-align: center;
-  height: 100%;
-}
+  height: 100%; }
 
 .bottom_box {
   position: absolute;
   text-align: center;
   bottom: 1.9em;
-  width: 100%;
-}
+  width: 100%; }
 
 .grid_item {
   height: 11em;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 .wineries_wrap section:nth-of-type(n+2) {
-  margin-top: 1em;
-}
+  margin-top: 1em; }
 
 .grid_item_container a, .grid_item_container a:hover, .grid_item_container a:link, .grid_item_container a:visited {
   text-decoration: none;
-  color: #222;
-}
+  color: #222; }
 
 .grid_item_colour_cover {
   background: rgba(0, 0, 0, 0.55);
@@ -1150,12 +1018,10 @@ POSTS & CONTENT STYLES
   -moz-transition: background 0.5s ease-out;
   -o-transition: background 0.5s ease-out;
   -ms-transition: background 0.5s ease-out;
-  transition: background 0.5s ease-out;
-}
+  transition: background 0.5s ease-out; }
 
 .grid_item_colour_cover:hover {
-  background: rgba(0, 0, 0, 0.2);
-}
+  background: rgba(0, 0, 0, 0.2); }
 
 .grid_title {
   font-size: .9em;
@@ -1166,22 +1032,18 @@ POSTS & CONTENT STYLES
   text-transform: uppercase;
   display: inline-block;
   white-space: nowrap;
-  margin-top: 1em;
-}
+  margin-top: 1em; }
 
 .grid_about {
   font-size: .8em;
   line-height: 1.4;
-  margin-bottom: 2em;
-}
+  margin-bottom: 2em; }
 
 .featured_article {
-  margin-bottom: 2em;
-}
+  margin-bottom: 2em; }
 
 #content {
-  margin-top: 2.2em;
-}
+  margin-top: 2.2em; }
 
 /* end .hentry */
 /* want to style individual post classes? Booya! */
@@ -1195,8 +1057,7 @@ POSTS & CONTENT STYLES
 /* style by tag (i.e. tag-news) */
 /* post meta */
 .byline {
-  color: #999;
-}
+  color: #999; }
 
 /* entry content */
 .entry-content {
@@ -1205,103 +1066,86 @@ POSTS & CONTENT STYLES
   a bit difficult. It's set to start aligning
   and floating images at the next breakpoint,
   but it's up to you. Feel free to change it up.
-  */
-}
-.entry-content dd {
-  margin-left: 0;
-  font-size: 0.9em;
-  color: #787878;
-  margin-bottom: 1.5em;
-}
-.entry-content img {
-  margin: 0 0 1.5em 0;
-  max-width: 100%;
-  height: auto;
-}
-.entry-content video, .entry-content object {
-  max-width: 100%;
-  height: auto;
-}
-.entry-content pre {
-  background: #eee;
-  border: 1px solid #cecece;
-  padding: 10px;
-}
+  */ }
+  .entry-content dd {
+    margin-left: 0;
+    font-size: 0.9em;
+    color: #787878;
+    margin-bottom: 1.5em; }
+  .entry-content img {
+    margin: 0 0 1.5em 0;
+    max-width: 100%;
+    height: auto; }
+  .entry-content video, .entry-content object {
+    max-width: 100%;
+    height: auto; }
+  .entry-content pre {
+    background: #eee;
+    border: 1px solid #cecece;
+    padding: 10px; }
 
 /* end .entry-content */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
-  /* images inside wp-caption */
-}
-.wp-caption img {
-  max-width: 100%;
-  margin-bottom: 0;
-  width: 100%;
-}
-.wp-caption p.wp-caption-text {
-  font-size: 0.85em;
-  margin: 4px 0 7px;
-  text-align: center;
-}
+  /* images inside wp-caption */ }
+  .wp-caption img {
+    max-width: 100%;
+    margin-bottom: 0;
+    width: 100%; }
+  .wp-caption p.wp-caption-text {
+    font-size: 0.85em;
+    margin: 4px 0 7px;
+    text-align: center; }
 
 /* end .wp-caption */
 /* image gallery styles */
 /* end .gallery */
 /* gallery caption styles */
 .invisible {
-  visibility: hidden;
-}
+  visibility: hidden; }
 
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
 .pagination,
 .wp-prev-next {
-  margin: 1.1em 0 2.2em;
-}
+  margin: 1.1em 0 2.2em; }
 
 .pagination {
-  text-align: center;
-}
-.pagination ul {
-  display: inline-block;
-  white-space: nowrap;
-  padding: 0;
-  clear: both;
-  margin: 1px;
-}
-.pagination ul li {
-  padding: 0;
-  margin: 0;
-  float: left;
-  display: inline;
-  overflow: hidden;
-}
-.pagination ul li a, .pagination ul li span {
-  margin: 0;
-  text-decoration: none;
-  padding: 0;
-  line-height: 1em;
-  font-size: 1em;
-  font-weight: normal;
-  padding: .5em;
-  min-width: 1em;
-  display: block;
-}
-.pagination ul li span.current {
-  font-weight: bold;
-}
+  text-align: center; }
+  .pagination ul {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0;
+    clear: both;
+    margin: 1px; }
+    .pagination ul li {
+      padding: 0;
+      margin: 0;
+      float: left;
+      display: inline;
+      overflow: hidden; }
+      .pagination ul li a, .pagination ul li span {
+        margin: 0;
+        text-decoration: none;
+        padding: 0;
+        line-height: 1em;
+        font-size: 1em;
+        font-weight: normal;
+        padding: .5em;
+        min-width: 1em;
+        display: block; }
+      .pagination ul li span.current {
+        font-weight: bold; }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
 .wp-prev-next .prev-link {
-  float: left;
-}
+  float: left; }
 .wp-prev-next .next-link {
-  float: right;
-}
+  float: right; }
 
 /* end .wp-prev-next */
 /******************************************************************
@@ -1309,8 +1153,7 @@ COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
 #comments {
-  /* number of comments span */
-}
+  /* number of comments span */ }
 
 .commentlist {
   /* general comment classes */
@@ -1320,90 +1163,71 @@ COMMENT STYLES
   /* comment content */
   /* end .commentlist .comment_content */
   /* comment reply link */
-  /* end .commentlist .comment-reply-link */
-}
-.commentlist li {
-  position: relative;
-  clear: both;
-  overflow: hidden;
-  list-style-type: none;
-  margin-bottom: 1.5em;
-  padding: 0.7335em 10px;
-  /* end .commentlist li ul.children */
-}
-.commentlist li:last-child {
-  margin-bottom: 0;
-}
-.commentlist li ul.children {
-  margin: 0;
-  /* variations */
-  /* change number for different depth */
-}
-.commentlist li[class*=depth-] {
-  margin-top: 1.1em;
-}
-.commentlist li.depth-1 {
-  margin-left: 0;
-  margin-top: 0;
-}
-.commentlist li:not(.depth-1) {
-  margin-right: -10px;
-  margin-left: -10px;
-  margin-top: 0;
-  padding-bottom: 0;
-}
-.commentlist .odd {
-  background: #eee;
-}
-.commentlist .even {
-  background: #fefefe;
-}
-.commentlist .vcard {
-  margin-left: 50px;
-}
-.commentlist .vcard cite.fn {
-  font-weight: 700;
-  font-style: normal;
-}
-.commentlist .vcard time {
-  float: right;
-}
-.commentlist .vcard time a {
-  color: #999;
-  text-decoration: none;
-}
-.commentlist .vcard time a:hover {
-  text-decoration: underline;
-}
-.commentlist .vcard img.avatar {
-  position: absolute;
-  left: 10px;
-  padding: 2px;
-  border: 1px solid #cecece;
-  background: #fff;
-}
-.commentlist .comment_content {
-  margin-left: 50px;
-}
-.commentlist .comment_content p {
-  margin: 0.7335em 0 1.5em;
-  font-size: 1em;
-  line-height: 1.5em;
-}
-.commentlist .comment-reply-link {
-  text-decoration: none;
-  float: right;
-  background: #4598bb;
-  padding: 3px 5px;
-  color: #fff;
-  opacity: 0.65;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 0.9em;
-}
-.commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
-  opacity: 1;
-}
+  /* end .commentlist .comment-reply-link */ }
+  .commentlist li {
+    position: relative;
+    clear: both;
+    overflow: hidden;
+    list-style-type: none;
+    margin-bottom: 1.5em;
+    padding: 0.7335em 10px;
+    /* end .commentlist li ul.children */ }
+    .commentlist li:last-child {
+      margin-bottom: 0; }
+    .commentlist li ul.children {
+      margin: 0;
+      /* variations */
+      /* change number for different depth */ }
+  .commentlist li[class*=depth-] {
+    margin-top: 1.1em; }
+  .commentlist li.depth-1 {
+    margin-left: 0;
+    margin-top: 0; }
+  .commentlist li:not(.depth-1) {
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: 0;
+    padding-bottom: 0; }
+  .commentlist .odd {
+    background: #eee; }
+  .commentlist .even {
+    background: #fefefe; }
+  .commentlist .vcard {
+    margin-left: 50px; }
+    .commentlist .vcard cite.fn {
+      font-weight: 700;
+      font-style: normal; }
+    .commentlist .vcard time {
+      float: right; }
+      .commentlist .vcard time a {
+        color: #999;
+        text-decoration: none; }
+        .commentlist .vcard time a:hover {
+          text-decoration: underline; }
+    .commentlist .vcard img.avatar {
+      position: absolute;
+      left: 10px;
+      padding: 2px;
+      border: 1px solid #cecece;
+      background: #fff; }
+  .commentlist .comment_content {
+    margin-left: 50px; }
+    .commentlist .comment_content p {
+      margin: 0.7335em 0 1.5em;
+      font-size: 1em;
+      line-height: 1.5em; }
+  .commentlist .comment-reply-link {
+    text-decoration: none;
+    float: right;
+    background: #4598bb;
+    padding: 3px 5px;
+    color: #fff;
+    opacity: 0.65;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 0.9em; }
+    .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
+      opacity: 1; }
 
 /* end .commentlist */
 /******************************************************************
@@ -1411,91 +1235,77 @@ COMMENT FORM STYLES
 ******************************************************************/
 .respond-form {
   margin: 1.5em 10px;
-  padding-bottom: 2.2em;
-}
-.respond-form form {
-  margin: 0.75em 0;
-}
-.respond-form form li {
-  list-style-type: none;
-  clear: both;
-  margin-bottom: 0.7335em;
-}
-.respond-form form li label,
-.respond-form form li small {
-  display: none;
-}
-.respond-form form input[type=text],
-.respond-form form input[type=email],
-.respond-form form input[type=url],
-.respond-form form textarea {
-  padding: 3px 6px;
-  background: #efefef;
-  border: 2px solid #cecece;
-  line-height: 1.5em;
-  /* form validation */
-}
-.respond-form form input[type=text]:focus,
-.respond-form form input[type=email]:focus,
-.respond-form form input[type=url]:focus,
-.respond-form form textarea:focus {
-  background: #fff;
-}
-.respond-form form input[type=text]:invalid,
-.respond-form form input[type=email]:invalid,
-.respond-form form input[type=url]:invalid,
-.respond-form form textarea:invalid {
-  outline: none;
-  border-color: #fbc2c4;
-  background-color: #f6e7eb;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -ms-box-shadow: none;
-  box-shadow: none;
-}
-.respond-form form input[type=text],
-.respond-form form input[type=email],
-.respond-form form input[type=url] {
-  max-width: 400px;
-  min-width: 250px;
-}
-.respond-form form textarea {
-  resize: none;
-  width: 97.3%;
-  height: 150px;
-}
+  padding-bottom: 2.2em; }
+  .respond-form form {
+    margin: 0.75em 0; }
+    .respond-form form li {
+      list-style-type: none;
+      clear: both;
+      margin-bottom: 0.7335em; }
+      .respond-form form li label,
+      .respond-form form li small {
+        display: none; }
+    .respond-form form input[type=text],
+    .respond-form form input[type=email],
+    .respond-form form input[type=url],
+    .respond-form form textarea {
+      padding: 3px 6px;
+      background: #efefef;
+      border: 2px solid #cecece;
+      line-height: 1.5em;
+      /* form validation */ }
+      .respond-form form input[type=text]:focus,
+      .respond-form form input[type=email]:focus,
+      .respond-form form input[type=url]:focus,
+      .respond-form form textarea:focus {
+        background: #fff; }
+      .respond-form form input[type=text]:invalid,
+      .respond-form form input[type=email]:invalid,
+      .respond-form form input[type=url]:invalid,
+      .respond-form form textarea:invalid {
+        outline: none;
+        border-color: #fbc2c4;
+        background-color: #f6e7eb;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -ms-box-shadow: none;
+        box-shadow: none; }
+    .respond-form form input[type=text],
+    .respond-form form input[type=email],
+    .respond-form form input[type=url] {
+      max-width: 400px;
+      min-width: 250px; }
+    .respond-form form textarea {
+      resize: none;
+      width: 97.3%;
+      height: 150px; }
 
 /* comment submit button */
 /* comment form title */
 #comment-form-title {
-  margin: 0 0 1.1em;
-}
+  margin: 0 0 1.1em; }
 
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
 #allowed_tags {
-  margin: 1.5em 10px 0.7335em 0;
-}
+  margin: 1.5em 10px 0.7335em 0; }
 
 /* no comments */
 .nocomments {
-  margin: 0 20px 1.1em;
-}
+  margin: 0 20px 1.1em; }
 
 /*********************
 SIDEBARS & ASIDES
 *********************/
 .widget ul li {
-  /* deep nesting */
-}
+  /* deep nesting */ }
 
 /*********************
 FOOTER STYLES
 *********************/
 .footer {
-  clear: both;
-}
+  clear: both; }
 
 /*
 if you checked out the link above:
@@ -1509,210 +1319,154 @@ view.
 /* end .footer-links */
 @media only screen and (min-width: 32em) {
   .content_wrap {
-    width: 77%;
-  }
+    width: 77%; }
 
   .wineries_wrap {
-    width: 95%;
-  }
+    width: 95%; }
 
   .content_aligned {
-    margin-left: 11.5%;
-  }
+    margin-left: 11.5%; }
 
   .wineries_wrap section:nth-of-type(-n+2) {
-    margin-top: 0;
-  }
+    margin-top: 0; }
 
   .wineries_wrap section:nth-of-type(n+3) {
-    margin-top: 1em;
-  }
+    margin-top: 1em; }
 
   .grid_item_container {
-    height: 18em;
-  }
+    height: 18em; }
 
   .grid_item_container {
     width: 50%;
     padding-left: .6em;
     padding-right: .6em;
-    float: left;
-  }
+    float: left; }
 
   .grid_title {
-    font-size: .9em;
-  }
+    font-size: .9em; }
 
   .grid_about {
-    margin-bottom: 0;
-  }
+    margin-bottom: 0; }
 
   .grid_item:nth-child(n+1) {
-    margin-top: 0em;
-  }
+    margin-top: 0em; }
 
   .grid_item:nth-child(n+2) {
-    margin-top: 0em;
-  }
-}
+    margin-top: 0em; } }
 @media only screen and (min-width: 42em) {
   body {
-    font-size: 1.25em;
-  }
+    font-size: 1.25em; }
 
   .control_box {
-    font-size: .8em;
-  }
+    font-size: .8em; }
 
   .subtitle {
-    font-size: .75em;
-  }
+    font-size: .75em; }
 
   .grid_item_container {
     padding-left: .75em;
-    padding-right: .75em;
-  }
+    padding-right: .75em; }
 
   .content_wrap {
-    width: 73%;
-  }
+    width: 73%; }
 
   .content_aligned {
-    margin-left: 13.5%;
-  }
+    margin-left: 13.5%; }
 
   .custom_alignment .control_box {
     text-align: left;
-    white-space: nowrap;
-  }
-}
+    white-space: nowrap; } }
 @media only screen and (min-width: 50em) {
   body {
-    font-size: 1.3em;
-  }
+    font-size: 1.3em; }
 
   .control_box {
-    font-size: .9em;
-  }
+    font-size: .9em; }
 
   .subtitle {
-    font-size: .7em;
-  }
+    font-size: .7em; }
 
   .grid_item_container {
     padding-left: .85em;
-    padding-right: .85em;
-  }
+    padding-right: .85em; }
 
   .content_wrap {
-    width: 65%;
-  }
+    width: 65%; }
 
   .content_aligned {
-    margin-left: 17.5%;
-  }
-}
+    margin-left: 17.5%; } }
 @media only screen and (min-width: 62em) {
   .grid_item {
-    height: 15em;
-  }
+    height: 15em; }
 
   .grid_item_container {
-    height: 23em;
-  }
-}
+    height: 23em; } }
 @media only screen and (min-width: 65em) {
   body {
-    font-size: 1.4em;
-  }
+    font-size: 1.4em; }
 
   .wineries_wrap section:nth-of-type(-n+3) {
-    margin-top: 0;
-  }
+    margin-top: 0; }
 
   .wineries_wrap section:nth-of-type(n+4) {
-    margin-top: 1em;
-  }
+    margin-top: 1em; }
 
   .grid_item_container {
     padding-left: 1em;
-    padding-right: 1em;
-  }
+    padding-right: 1em; }
 
   .grid_item_container {
-    width: 33.3333%;
-  }
+    width: 33.3333%; }
 
   .grid_item {
-    height: 12em;
-  }
+    height: 12em; }
 
   .grid_item_container {
-    height: 20em;
-  }
+    height: 20em; }
 
   .content_wrap {
-    width: 60%;
-  }
+    width: 60%; }
 
   .content_aligned {
-    margin-left: 20%;
-  }
+    margin-left: 20%; }
 
   .archive_text {
-    font-size: 1.8em;
-  }
-}
+    font-size: 1.8em; } }
 @media only screen and (min-width: 80em) {
   .control_box {
-    font-size: 1em;
-  }
-}
+    font-size: 1em; } }
 @media only screen and (min-width: 1300px) {
   .content_wrap {
     width: auto;
     max-width: 780px;
-    margin-left: 17%;
-  }
+    margin-left: 17%; }
 
   .grid_item {
-    height: 15em;
-  }
+    height: 15em; }
 
   .grid_item_container {
-    height: 23em;
-  }
+    height: 23em; }
 
   .article_abstract {
-    margin-right: -12em;
-  }
+    margin-right: -12em; }
 
   .content_aligned {
-    margin-left: 17%;
-  }
-}
+    margin-left: 17%; } }
 @media only screen and (min-width: 1800px) {
   .wineries_wrap section:nth-of-type(-n+4) {
-    margin-top: 0;
-  }
+    margin-top: 0; }
 
   .wineries_wrap section:nth-of-type(n+5) {
-    margin-top: 1em;
-  }
+    margin-top: 1em; }
 
   .grid_item_container {
-    width: 25%;
-  }
-}
+    width: 25%; } }
 @media only screen and (min-width: 1900px) {
   .grid_item {
-    height: 16em;
-  }
+    height: 16em; }
 
   .grid_item_container {
-    height: 24em;
-  }
-}
+    height: 24em; } }
 /*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -1741,24 +1495,20 @@ tweeners.
   *********************/
   /* .menu is clearfixed inside mixins.scss */
   .menu {
-    /* end .menu ul */
-  }
-  .menu ul {
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */
-  }
-  .menu ul li {
-    /*
-    plan your menus and drop-downs wisely.
-    */
-  }
-  .menu ul li a {
-    /*
-    you can use hover styles here even though this size
-    has the possibility of being a mobile device.
-    */
-  }
+    /* end .menu ul */ }
+    .menu ul {
+      /* end .menu ul li */
+      /* highlight current page */
+      /* end current highlighters */ }
+      .menu ul li {
+        /*
+        plan your menus and drop-downs wisely.
+        */ }
+        .menu ul li a {
+          /*
+          you can use hover styles here even though this size
+          has the possibility of being a mobile device.
+          */ }
 
   /* end .menu */
   /*********************
@@ -1766,24 +1516,20 @@ tweeners.
   *********************/
   /* entry content */
   .entry-content {
-    /* at this larger size, we can start to align images */
-  }
-  .entry-content .alignleft, .entry-content img.alignleft {
-    margin-right: 1.5em;
-    display: inline;
-    float: left;
-  }
-  .entry-content .alignright, .entry-content img.alignright {
-    margin-left: 1.5em;
-    display: inline;
-    float: right;
-  }
-  .entry-content .aligncenter, .entry-content img.aligncenter {
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    clear: both;
-  }
+    /* at this larger size, we can start to align images */ }
+    .entry-content .alignleft, .entry-content img.alignleft {
+      margin-right: 1.5em;
+      display: inline;
+      float: left; }
+    .entry-content .alignright, .entry-content img.alignright {
+      margin-left: 1.5em;
+      display: inline;
+      float: right; }
+    .entry-content .aligncenter, .entry-content img.aligncenter {
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      clear: both; }
 
   /* end .entry-content */
   /*********************
@@ -1793,8 +1539,7 @@ tweeners.
   check your menus here. do they look good?
   do they need tweaking?
   */
-  /* end .footer-links */
-}
+  /* end .footer-links */ }
 /*
 TABLET & SMALLER LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and
@@ -1825,78 +1570,63 @@ you can add resource intensive styles.
   
   ******************************************************************/
   .onecol {
-    width: 5.801104972%;
-  }
+    width: 5.801104972%; }
 
   /* 4.85%;  } /* grid_1  */
   .twocol {
-    width: 14.364640883%;
-  }
+    width: 14.364640883%; }
 
   /* 13.45%; } /* grid_2  */
   .threecol {
-    width: 22.928176794%;
-  }
+    width: 22.928176794%; }
 
   /* 22.05%; } /* grid_3  */
   .fourcol {
-    width: 31.491712705%;
-  }
+    width: 31.491712705%; }
 
   /* 30.75%; } /* grid_4  */
   .fivecol {
-    width: 40.055248616%;
-  }
+    width: 40.055248616%; }
 
   /* 39.45%; } /* grid_5  */
   .sixcol {
-    width: 48.618784527%;
-  }
+    width: 48.618784527%; }
 
   /* 48%;    } /* grid_6  */
   .sevencol {
-    width: 57.182320438000005%;
-  }
+    width: 57.182320438000005%; }
 
   /* 56.75%; } /* grid_7  */
   .eightcol {
-    width: 65.74585634900001%;
-  }
+    width: 65.74585634900001%; }
 
   /* 65.4%;  } /* grid_8  */
   .ninecol {
-    width: 74.30939226%;
-  }
+    width: 74.30939226%; }
 
   /* 74.05%; } /* grid_9  */
   .tencol {
-    width: 82.87292817100001%;
-  }
+    width: 82.87292817100001%; }
 
   /* 82.7%;  } /* grid_10 */
   .elevencol {
-    width: 91.436464082%;
-  }
+    width: 91.436464082%; }
 
   /* 91.35%; } /* grid_11 */
   .twelvecol {
-    width: 99.999999993%;
-  }
+    width: 99.999999993%; }
 
   /* 100%;   } /* grid_12 */
   .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
     position: relative;
     float: left;
-    margin-left: 2.762430939%;
-  }
+    margin-left: 2.762430939%; }
 
   .first {
-    margin-left: 0;
-  }
+    margin-left: 0; }
 
   .last {
-    float: right;
-  }
+    float: right; }
 
   /******************************************************************
   Site Name:
@@ -1918,8 +1648,7 @@ you can add resource intensive styles.
   LAYOUT & GRID STYLES
   *********************/
   .wrap {
-    max-width: 1140px;
-  }
+    max-width: 1140px; }
 
   /*********************
   HEADER STYLES
@@ -1930,73 +1659,60 @@ you can add resource intensive styles.
   .nav {
     /* end .menu ul li */
     /* highlight current page */
-    /* end current highlighters */
-  }
-  .nav ul {
-    margin-top: 0;
-  }
-  .nav li {
-    float: left;
-    position: relative;
-    /*
-    plan your menus and drop-downs wisely.
-    */
-    /* showing sub-menus */
-  }
-  .nav li a {
-    border-bottom: 0;
-    /*
-    you can use hover styles here even though this size
-    has the possibility of being a mobile device.
-    */
-  }
-  .nav li ul.sub-menu,
-  .nav li ul.children {
-    /* highlight sub-menu current page */
-  }
-  .nav li ul.sub-menu li,
-  .nav li ul.children li {
-    /*
-    if you need to go deeper, go nuts
-    just remember deeper menus suck
-    for usability. k, bai.
-    */
-  }
-  .nav li ul.sub-menu li:last-child a,
-  .nav li ul.children li:last-child a {
-    border-bottom: 0;
-  }
-  .nav li:hover ul {
-    top: auto;
-    overflow: visible;
-    visibility: visible;
-  }
+    /* end current highlighters */ }
+    .nav ul {
+      margin-top: 0; }
+    .nav li {
+      float: left;
+      position: relative;
+      /*
+      plan your menus and drop-downs wisely.
+      */
+      /* showing sub-menus */ }
+      .nav li a {
+        border-bottom: 0;
+        /*
+        you can use hover styles here even though this size
+        has the possibility of being a mobile device.
+        */ }
+      .nav li ul.sub-menu,
+      .nav li ul.children {
+        /* highlight sub-menu current page */ }
+        .nav li ul.sub-menu li,
+        .nav li ul.children li {
+          /*
+          if you need to go deeper, go nuts
+          just remember deeper menus suck
+          for usability. k, bai.
+          */ }
+          .nav li ul.sub-menu li:last-child a,
+          .nav li ul.children li:last-child a {
+            border-bottom: 0; }
+      .nav li:hover ul {
+        top: auto;
+        overflow: visible;
+        visibility: visible; }
 
   /* end .nav */
   /*********************
   SIDEBARS & ASIDES
   *********************/
   .sidebar {
-    margin-top: 2.2em;
-  }
+    margin-top: 2.2em; }
 
   .widgettitle {
     border-bottom: 2px solid #444;
-    margin-bottom: 0.75em;
-  }
+    margin-bottom: 0.75em; }
 
   .widget {
     padding: 0 10px;
-    margin: 2.2em 0;
-  }
-  .widget ul li {
-    margin-bottom: 0.75em;
-    /* deep nesting */
-  }
-  .widget ul li ul {
-    margin-top: 0.75em;
-    padding-left: 1em;
-  }
+    margin: 2.2em 0; }
+    .widget ul li {
+      margin-bottom: 0.75em;
+      /* deep nesting */ }
+      .widget ul li ul {
+        margin-top: 0.75em;
+        padding-left: 1em; }
 
   /* links widget */
   /* meta widget */
@@ -2022,11 +1738,9 @@ you can add resource intensive styles.
     be careful with the depth of your menus.
     it's very rare to have multi-depth menus in
     the footer.
-    */
-  }
+    */ }
 
-  /* end .footer-links */
-}
+  /* end .footer-links */ }
 /*
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
@@ -2043,8 +1757,7 @@ you can add resource intensive styles.
   This is the desktop size. It's larger than an iPad so it will only
   be seen on the Desktop. 
   
-  ******************************************************************/
-}
+  ******************************************************************/ }
 /*
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
@@ -2059,8 +1772,7 @@ This is for the larger monitors and possibly full screen viewers.
   You can add some advanced styles here if you like. This kicks in
   on larger screens.
   
-  ******************************************************************/
-}
+  ******************************************************************/ }
 /*
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
@@ -2107,8 +1819,7 @@ query for retina AND a certain size if you want. Go Nuts.
   (this is pretty standard practice). Set the background image so it matches
   the original dimensions and you are good to go. 
   
-  */
-}
+  */ }
 /*
 iPHONE 5 MEDIA QUERY
 Want to get fancy for no good reason? Knock yourself out.
@@ -2136,61 +1847,47 @@ be set to display none.
     color: black !important;
     text-shadow: none !important;
     filter: none !important;
-    -ms-filter: none !important;
-  }
+    -ms-filter: none !important; }
 
   a, a:visited {
     color: #444 !important;
-    text-decoration: underline;
-  }
-  a:after, a:visited:after {
-    content: " (" attr(href) ")";
-  }
-  a abbr[title]:after, a:visited abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
+    text-decoration: underline; }
+    a:after, a:visited:after {
+      content: " (" attr(href) ")"; }
+    a abbr[title]:after, a:visited abbr[title]:after {
+      content: " (" attr(title) ")"; }
 
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
-    content: "";
-  }
+    content: ""; }
 
   pre, blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    page-break-inside: avoid; }
 
   thead {
-    display: table-header-group;
-  }
+    display: table-header-group; }
 
   tr, img {
-    page-break-inside: avoid;
-  }
+    page-break-inside: avoid; }
 
   img {
-    max-width: 100% !important;
-  }
+    max-width: 100% !important; }
 
   @page {
-    margin: 0.5cm;
-  }
+    margin: 0.5cm; }
   p, h2, h3 {
     orphans: 3;
-    widows: 3;
-  }
+    widows: 3; }
 
   h2,
   h3 {
-    page-break-after: avoid;
-  }
+    page-break-after: avoid; }
 
   .sidebar,
   .page-navigation,
   .wp-prev-next,
   .respond-form,
   nav {
-    display: none;
-  }
-}
+    display: none; } }
