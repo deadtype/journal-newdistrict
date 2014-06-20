@@ -83,7 +83,7 @@
 	</header>
 
 	<section class="entry-content clearfix">
-			<div class='content_wrap'>
+			<div class='article_content_wrap'>
 				<div class='article_abstract'>
 					<?php echo the_field('abstract'); ?>
 				</div>
