@@ -62,7 +62,7 @@ $content_wrap: 87.5%;
 	position: relative;
 }
 
-.article_content_wrap .article_abstract p {margin: 0; width: 100%;}
+.article_content_wrap .article_abstract p, .article_content_wrap blockquote p {margin: 0; width: 100%; max-width: initial;}
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
