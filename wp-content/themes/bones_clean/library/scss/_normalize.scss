@@ -425,7 +425,7 @@ b, strong, .strong { font-weight: 600; }
 
 dfn, em, .em { font-style: italic; }
 
-strong em {
+strong em, em strong {
   font-weight: 700;
 }
 
