@@ -326,7 +326,7 @@ NAVIGATION STYLES
 .archive_title, .archive_subtitle {
 	@extend .headline;
 	color: white;
-	line-height:.9;
+	line-height:1;
 }
 
 .archive_subtitle  {
@@ -435,6 +435,10 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+
+.farmers_markets_content {
+	margin-top: 6em;
+}
 
 .article_abstract {
 	font-style: italic;
